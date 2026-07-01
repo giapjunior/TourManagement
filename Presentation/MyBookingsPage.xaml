@@ -1,0 +1,30 @@
+<Page x:Class="Presentation.MyBookingsPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      Title="Booking của tôi" Background="#F8FAFC">
+    <Grid Margin="24">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row="0" Text="Booking của tôi" FontSize="22" FontWeight="Bold"
+                   Foreground="#064E3B" Margin="0,0,0,16"/>
+
+        <DataGrid Grid.Row="1" x:Name="dgMyBookings" AutoGenerateColumns="False"
+                  IsReadOnly="True" SelectionMode="Single" Background="White"
+                  BorderBrush="#E5E7EB" GridLinesVisibility="Horizontal"
+                  AlternatingRowBackground="#F9FAFB" FontSize="13">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="ID" Binding="{Binding BookingId}" Width="60"/>
+                <DataGridTextColumn Header="Tour" Binding="{Binding Schedule.Tour.TourName}" Width="200"/>
+                <DataGridTextColumn Header="Ngày đi" Binding="{Binding Schedule.DepartureDate}" Width="110"/>
+                <DataGridTextColumn Header="Ngày về" Binding="{Binding Schedule.ReturnDate}" Width="110"/>
+                <DataGridTextColumn Header="Số người" Binding="{Binding NumberOfPeople}" Width="90"/>
+                <DataGridTextColumn Header="Tổng tiền" Binding="{Binding TotalPrice, StringFormat={}{0:N0} VNĐ}" Width="140"/>
+                <DataGridTextColumn Header="Ngày đặt" Binding="{Binding BookingDate}" Width="110"/>
+                <DataGridTextColumn Header="Trạng thái" Binding="{Binding Status}" Width="110"/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Page>

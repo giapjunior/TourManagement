@@ -1,0 +1,140 @@
+<Page x:Class="Presentation.StatisticsPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      Title="Thống kê" Background="#F8FAFC">
+    <Grid Margin="24">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row="0" Text="📊 Thống kê - Báo cáo" FontSize="22" FontWeight="Bold"
+                   Foreground="#1E3A5F" Margin="0,0,0,16"/>
+
+        <TabControl Grid.Row="1" BorderBrush="#E5E7EB" FontSize="13">
+            <!-- Tab 1: Doanh thu -->
+            <TabItem Header="💰 Doanh thu">
+                <Grid Margin="16">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="0,0,0,12">
+                        <TextBlock Text="Chọn năm:" FontSize="13" VerticalAlignment="Center" Margin="0,0,8,0"/>
+                        <ComboBox x:Name="cboRevenueYear" Width="100" Height="32" FontSize="13"
+                                  SelectionChanged="cboRevenueYear_Changed"/>
+                        <TextBlock x:Name="txtTotalRevenue" FontSize="15" FontWeight="Bold"
+                                   Foreground="#10B981" VerticalAlignment="Center" Margin="24,0,0,0"/>
+                    </StackPanel>
+
+                    <DataGrid Grid.Row="2" x:Name="dgRevenue" AutoGenerateColumns="False"
+                              IsReadOnly="True" Background="White" BorderBrush="#E5E7EB"
+                              GridLinesVisibility="Horizontal" AlternatingRowBackground="#F9FAFB" FontSize="13">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="Tháng" Binding="{Binding Month}" Width="100"/>
+                            <DataGridTextColumn Header="Doanh thu (VNĐ)" Binding="{Binding Revenue, StringFormat={}{0:N0}}" Width="200"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </Grid>
+            </TabItem>
+
+            <!-- Tab 2: Booking theo trạng thái -->
+            <TabItem Header="🎫 Booking">
+                <Grid Margin="16">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="0,0,0,12">
+                        <TextBlock Text="Từ ngày:" FontSize="13" VerticalAlignment="Center" Margin="0,0,8,0"/>
+                        <DatePicker x:Name="dpBookingFrom" Width="130" Height="32" FontSize="13" Margin="0,0,16,0"/>
+                        <TextBlock Text="Đến ngày:" FontSize="13" VerticalAlignment="Center" Margin="0,0,8,0"/>
+                        <DatePicker x:Name="dpBookingTo" Width="130" Height="32" FontSize="13" Margin="0,0,16,0"/>
+                        <Button Content="Xem" Height="32" Padding="16,0" Background="#2563EB"
+                                Foreground="White" BorderThickness="0" FontSize="13" Cursor="Hand"
+                                Click="btnLoadBookingStats_Click"/>
+                    </StackPanel>
+
+                    <DataGrid Grid.Row="1" x:Name="dgBookingStats" AutoGenerateColumns="False"
+                              IsReadOnly="True" Background="White" BorderBrush="#E5E7EB"
+                              GridLinesVisibility="Horizontal" AlternatingRowBackground="#F9FAFB" FontSize="13">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="Trạng thái" Binding="{Binding Status}" Width="150"/>
+                            <DataGridTextColumn Header="Số lượng" Binding="{Binding Count}" Width="150"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </Grid>
+            </TabItem>
+
+            <!-- Tab 3: Top Tour -->
+            <TabItem Header="🏆 Top Tour">
+                <Grid Margin="16">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <TextBlock Grid.Row="0" Text="Top 10 Tour được đặt nhiều nhất" FontSize="14"
+                               FontWeight="Bold" Foreground="#1E3A5F" Margin="0,0,0,12"/>
+
+                    <DataGrid Grid.Row="1" x:Name="dgTopTours" AutoGenerateColumns="False"
+                              IsReadOnly="True" Background="White" BorderBrush="#E5E7EB"
+                              GridLinesVisibility="Horizontal" AlternatingRowBackground="#F9FAFB" FontSize="13">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="Hạng" Binding="{Binding Rank}" Width="60"/>
+                            <DataGridTextColumn Header="Tên Tour" Binding="{Binding TourName}" Width="250"/>
+                            <DataGridTextColumn Header="Số lượng Booking" Binding="{Binding BookingCount}" Width="150"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </Grid>
+            </TabItem>
+
+            <!-- Tab 4: Khách hàng -->
+            <TabItem Header="👥 Khách hàng">
+                <Grid Margin="16">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <!-- Khách hàng mới theo tháng -->
+                    <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="0,0,0,8">
+                        <TextBlock Text="Khách hàng mới theo tháng — Năm:" FontSize="14"
+                                   FontWeight="Bold" Foreground="#1E3A5F" VerticalAlignment="Center" Margin="0,0,8,0"/>
+                        <ComboBox x:Name="cboCustomerYear" Width="100" Height="32" FontSize="13"
+                                  SelectionChanged="cboCustomerYear_Changed"/>
+                    </StackPanel>
+
+                    <DataGrid Grid.Row="1" x:Name="dgNewCustomers" AutoGenerateColumns="False"
+                              IsReadOnly="True" Background="White" BorderBrush="#E5E7EB"
+                              GridLinesVisibility="Horizontal" AlternatingRowBackground="#F9FAFB"
+                              FontSize="13" MaxHeight="200">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="Tháng" Binding="{Binding Month}" Width="100"/>
+                            <DataGridTextColumn Header="Số KH mới" Binding="{Binding Count}" Width="150"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+
+                    <!-- Top chi tiêu -->
+                    <TextBlock Grid.Row="2" Text="Top 10 Khách hàng chi tiêu nhiều nhất" FontSize="14"
+                               FontWeight="Bold" Foreground="#1E3A5F" Margin="0,16,0,8"/>
+
+                    <DataGrid Grid.Row="3" x:Name="dgTopCustomers" AutoGenerateColumns="False"
+                              IsReadOnly="True" Background="White" BorderBrush="#E5E7EB"
+                              GridLinesVisibility="Horizontal" AlternatingRowBackground="#F9FAFB" FontSize="13">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="Hạng" Binding="{Binding Rank}" Width="60"/>
+                            <DataGridTextColumn Header="Khách hàng" Binding="{Binding CustomerName}" Width="200"/>
+                            <DataGridTextColumn Header="Tổng chi tiêu (VNĐ)" Binding="{Binding TotalSpent, StringFormat={}{0:N0}}" Width="200"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Page>

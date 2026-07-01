@@ -1,0 +1,77 @@
+<Page x:Class="Presentation.BookingPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      Title="Đặt Tour" Background="#F8FAFC">
+    <Grid Margin="24">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row="0" Text="Quản lý Đặt Tour" FontSize="22" FontWeight="Bold"
+                   Foreground="#1E3A5F" Margin="0,0,0,16"/>
+
+        <!-- Toolbar: Search + Filter Status -->
+        <Grid Grid.Row="1" Margin="0,0,0,12">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="160"/>
+            </Grid.ColumnDefinitions>
+            <TextBox x:Name="txtSearch" Grid.Column="0" Height="36" Padding="10,6"
+                     FontSize="13" BorderBrush="#D1D5DB" Margin="0,0,8,0"
+                     KeyUp="txtSearch_KeyUp"/>
+            <Button Grid.Column="1" Content="🔍 Tìm" Height="36" Padding="14,0"
+                    Background="#6B7280" Foreground="White" BorderThickness="0"
+                    FontSize="13" Cursor="Hand" Click="btnSearch_Click" Margin="0,0,8,0"/>
+            <TextBlock Grid.Column="2" Text="Trạng thái:" FontSize="13"
+                       VerticalAlignment="Center" Margin="0,0,8,0"/>
+            <ComboBox x:Name="cboStatus" Grid.Column="3" Height="36" FontSize="13"
+                      BorderBrush="#D1D5DB" SelectionChanged="cboStatus_Changed">
+                <ComboBoxItem Content="Tất cả" IsSelected="True"/>
+                <ComboBoxItem Content="Pending"/>
+                <ComboBoxItem Content="Confirmed"/>
+                <ComboBoxItem Content="Cancelled"/>
+                <ComboBoxItem Content="Completed"/>
+            </ComboBox>
+        </Grid>
+
+        <DataGrid Grid.Row="2" x:Name="dgBooking" AutoGenerateColumns="False"
+                  IsReadOnly="True" SelectionMode="Single" Background="White"
+                  BorderBrush="#E5E7EB" GridLinesVisibility="Horizontal"
+                  AlternatingRowBackground="#F9FAFB" FontSize="13">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="ID" Binding="{Binding BookingId}" Width="50"/>
+                <DataGridTextColumn Header="Khách hàng" Binding="{Binding Customer.FullName}" Width="140"/>
+                <DataGridTextColumn Header="Tour" Binding="{Binding Schedule.Tour.TourName}" Width="150"/>
+                <DataGridTextColumn Header="Ngày đi" Binding="{Binding Schedule.DepartureDate}" Width="100"/>
+                <DataGridTextColumn Header="Ngày đặt" Binding="{Binding BookingDate, StringFormat={}{0:dd/MM/yyyy}}" Width="95"/>
+                <DataGridTextColumn Header="Số người" Binding="{Binding NumberOfPeople}" Width="70"/>
+                <DataGridTextColumn Header="Tổng tiền" Binding="{Binding TotalPrice, StringFormat={}{0:N0}}" Width="110"/>
+                <DataGridTextColumn Header="Trạng thái" Binding="{Binding Status}" Width="90"/>
+                <DataGridTemplateColumn Header="Thao tác" Width="240">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <StackPanel Orientation="Horizontal">
+                                <Button Content="Chi tiết" Width="55" Height="26" Margin="0,0,3,0"
+                                        Background="#6366F1" Foreground="White" BorderThickness="0"
+                                        FontSize="11" Cursor="Hand" Click="btnDetail_Click" Tag="{Binding BookingId}"/>
+                                <Button Content="Duyệt" Width="45" Height="26" Margin="0,0,3,0"
+                                        Background="#10B981" Foreground="White" BorderThickness="0"
+                                        FontSize="11" Cursor="Hand" Click="btnApprove_Click" Tag="{Binding BookingId}"/>
+                                <Button Content="Hoàn thành" Width="65" Height="26" Margin="0,0,3,0"
+                                        Background="#3B82F6" Foreground="White" BorderThickness="0"
+                                        FontSize="11" Cursor="Hand" Click="btnComplete_Click" Tag="{Binding BookingId}"/>
+                                <Button Content="Hủy" Width="40" Height="26"
+                                        Background="#EF4444" Foreground="White" BorderThickness="0"
+                                        FontSize="11" Cursor="Hand" Click="btnCancel_Click" Tag="{Binding BookingId}"/>
+                            </StackPanel>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Page>

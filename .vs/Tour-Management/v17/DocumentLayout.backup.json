@@ -1,0 +1,606 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\FPTU\\Projects\\PRN212\\Tour-Management\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CF39C708-1F4B-47D3-8FF2-9F95A09280DB}|Presentation\\Presentation.csproj|c:\\fptu\\projects\\prn212\\tour-management\\presentation\\accountpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CF39C708-1F4B-47D3-8FF2-9F95A09280DB}|Presentation\\Presentation.csproj|solutionrelative:presentation\\accountpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF39C708-1F4B-47D3-8FF2-9F95A09280DB}|Presentation\\Presentation.csproj|c:\\fptu\\projects\\prn212\\tour-management\\presentation\\loginwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CF39C708-1F4B-47D3-8FF2-9F95A09280DB}|Presentation\\Presentation.csproj|solutionrelative:presentation\\loginwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF39C708-1F4B-47D3-8FF2-9F95A09280DB}|Presentation\\Presentation.csproj|c:\\fptu\\projects\\prn212\\tour-management\\presentation\\accountdialog.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF39C708-1F4B-47D3-8FF2-9F95A09280DB}|Presentation\\Presentation.csproj|solutionrelative:presentation\\accountdialog.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7102C012-FA37-44E8-9EC6-94D8506916DD}|DataAccess\\DataAccess.csproj|c:\\fptu\\projects\\prn212\\tour-management\\dataaccess\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7102C012-FA37-44E8-9EC6-94D8506916DD}|DataAccess\\DataAccess.csproj|solutionrelative:dataaccess\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7102C012-FA37-44E8-9EC6-94D8506916DD}|DataAccess\\DataAccess.csproj|c:\\fptu\\projects\\prn212\\tour-management\\dataaccess\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{7102C012-FA37-44E8-9EC6-94D8506916DD}|DataAccess\\DataAccess.csproj|solutionrelative:dataaccess\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A78037D8-760E-426F-85DA-E51FD13797C8}|Repository\\Repository.csproj|c:\\fptu\\projects\\prn212\\tour-management\\repository\\repository.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{A78037D8-760E-426F-85DA-E51FD13797C8}|Repository\\Repository.csproj|solutionrelative:repository\\repository.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF39C708-1F4B-47D3-8FF2-9F95A09280DB}|Presentation\\Presentation.csproj|c:\\fptu\\projects\\prn212\\tour-management\\presentation\\tourpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CF39C708-1F4B-47D3-8FF2-9F95A09280DB}|Presentation\\Presentation.csproj|solutionrelative:presentation\\tourpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF39C708-1F4B-47D3-8FF2-9F95A09280DB}|Presentation\\Presentation.csproj|c:\\fptu\\projects\\prn212\\tour-management\\presentation\\sessionmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF39C708-1F4B-47D3-8FF2-9F95A09280DB}|Presentation\\Presentation.csproj|solutionrelative:presentation\\sessionmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF39C708-1F4B-47D3-8FF2-9F95A09280DB}|Presentation\\Presentation.csproj|c:\\fptu\\projects\\prn212\\tour-management\\presentation\\tourdialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CF39C708-1F4B-47D3-8FF2-9F95A09280DB}|Presentation\\Presentation.csproj|solutionrelative:presentation\\tourdialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF39C708-1F4B-47D3-8FF2-9F95A09280DB}|Presentation\\Presentation.csproj|c:\\fptu\\projects\\prn212\\tour-management\\presentation\\schedulepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CF39C708-1F4B-47D3-8FF2-9F95A09280DB}|Presentation\\Presentation.csproj|solutionrelative:presentation\\schedulepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF39C708-1F4B-47D3-8FF2-9F95A09280DB}|Presentation\\Presentation.csproj|c:\\fptu\\projects\\prn212\\tour-management\\presentation\\scheduledialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CF39C708-1F4B-47D3-8FF2-9F95A09280DB}|Presentation\\Presentation.csproj|solutionrelative:presentation\\scheduledialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF39C708-1F4B-47D3-8FF2-9F95A09280DB}|Presentation\\Presentation.csproj|c:\\fptu\\projects\\prn212\\tour-management\\presentation\\mybookingspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CF39C708-1F4B-47D3-8FF2-9F95A09280DB}|Presentation\\Presentation.csproj|solutionrelative:presentation\\mybookingspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF39C708-1F4B-47D3-8FF2-9F95A09280DB}|Presentation\\Presentation.csproj|c:\\fptu\\projects\\prn212\\tour-management\\presentation\\customerwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CF39C708-1F4B-47D3-8FF2-9F95A09280DB}|Presentation\\Presentation.csproj|solutionrelative:presentation\\customerwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF39C708-1F4B-47D3-8FF2-9F95A09280DB}|Presentation\\Presentation.csproj|c:\\fptu\\projects\\prn212\\tour-management\\presentation\\customerpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CF39C708-1F4B-47D3-8FF2-9F95A09280DB}|Presentation\\Presentation.csproj|solutionrelative:presentation\\customerpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF39C708-1F4B-47D3-8FF2-9F95A09280DB}|Presentation\\Presentation.csproj|c:\\fptu\\projects\\prn212\\tour-management\\presentation\\booktourpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CF39C708-1F4B-47D3-8FF2-9F95A09280DB}|Presentation\\Presentation.csproj|solutionrelative:presentation\\booktourpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF39C708-1F4B-47D3-8FF2-9F95A09280DB}|Presentation\\Presentation.csproj|c:\\fptu\\projects\\prn212\\tour-management\\presentation\\bookingpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CF39C708-1F4B-47D3-8FF2-9F95A09280DB}|Presentation\\Presentation.csproj|solutionrelative:presentation\\bookingpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF39C708-1F4B-47D3-8FF2-9F95A09280DB}|Presentation\\Presentation.csproj|c:\\fptu\\projects\\prn212\\tour-management\\presentation\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CF39C708-1F4B-47D3-8FF2-9F95A09280DB}|Presentation\\Presentation.csproj|solutionrelative:presentation\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF39C708-1F4B-47D3-8FF2-9F95A09280DB}|Presentation\\Presentation.csproj|c:\\fptu\\projects\\prn212\\tour-management\\presentation\\adminwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CF39C708-1F4B-47D3-8FF2-9F95A09280DB}|Presentation\\Presentation.csproj|solutionrelative:presentation\\adminwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF39C708-1F4B-47D3-8FF2-9F95A09280DB}|Presentation\\Presentation.csproj|c:\\fptu\\projects\\prn212\\tour-management\\presentation\\accountdialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CF39C708-1F4B-47D3-8FF2-9F95A09280DB}|Presentation\\Presentation.csproj|solutionrelative:presentation\\accountdialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2865B350-E8B7-4576-A563-1CC2F63B1685}|Service\\Service.csproj|c:\\fptu\\projects\\prn212\\tour-management\\service\\tourservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2865B350-E8B7-4576-A563-1CC2F63B1685}|Service\\Service.csproj|solutionrelative:service\\tourservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2865B350-E8B7-4576-A563-1CC2F63B1685}|Service\\Service.csproj|c:\\fptu\\projects\\prn212\\tour-management\\service\\customerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2865B350-E8B7-4576-A563-1CC2F63B1685}|Service\\Service.csproj|solutionrelative:service\\customerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2865B350-E8B7-4576-A563-1CC2F63B1685}|Service\\Service.csproj|c:\\fptu\\projects\\prn212\\tour-management\\service\\bookingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2865B350-E8B7-4576-A563-1CC2F63B1685}|Service\\Service.csproj|solutionrelative:service\\bookingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7102C012-FA37-44E8-9EC6-94D8506916DD}|DataAccess\\DataAccess.csproj|c:\\fptu\\projects\\prn212\\tour-management\\dataaccess\\dataaccess\\booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7102C012-FA37-44E8-9EC6-94D8506916DD}|DataAccess\\DataAccess.csproj|solutionrelative:dataaccess\\dataaccess\\booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2865B350-E8B7-4576-A563-1CC2F63B1685}|Service\\Service.csproj|c:\\fptu\\projects\\prn212\\tour-management\\service\\accountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2865B350-E8B7-4576-A563-1CC2F63B1685}|Service\\Service.csproj|solutionrelative:service\\accountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A78037D8-760E-426F-85DA-E51FD13797C8}|Repository\\Repository.csproj|c:\\fptu\\projects\\prn212\\tour-management\\repository\\ischedulerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A78037D8-760E-426F-85DA-E51FD13797C8}|Repository\\Repository.csproj|solutionrelative:repository\\ischedulerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A78037D8-760E-426F-85DA-E51FD13797C8}|Repository\\Repository.csproj|c:\\fptu\\projects\\prn212\\tour-management\\repository\\paymentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A78037D8-760E-426F-85DA-E51FD13797C8}|Repository\\Repository.csproj|solutionrelative:repository\\paymentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A78037D8-760E-426F-85DA-E51FD13797C8}|Repository\\Repository.csproj|c:\\fptu\\projects\\prn212\\tour-management\\repository\\tourrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A78037D8-760E-426F-85DA-E51FD13797C8}|Repository\\Repository.csproj|solutionrelative:repository\\tourrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A78037D8-760E-426F-85DA-E51FD13797C8}|Repository\\Repository.csproj|c:\\fptu\\projects\\prn212\\tour-management\\repository\\schedulerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A78037D8-760E-426F-85DA-E51FD13797C8}|Repository\\Repository.csproj|solutionrelative:repository\\schedulerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A78037D8-760E-426F-85DA-E51FD13797C8}|Repository\\Repository.csproj|c:\\fptu\\projects\\prn212\\tour-management\\repository\\itourrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A78037D8-760E-426F-85DA-E51FD13797C8}|Repository\\Repository.csproj|solutionrelative:repository\\itourrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A78037D8-760E-426F-85DA-E51FD13797C8}|Repository\\Repository.csproj|c:\\fptu\\projects\\prn212\\tour-management\\repository\\igenericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A78037D8-760E-426F-85DA-E51FD13797C8}|Repository\\Repository.csproj|solutionrelative:repository\\igenericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A78037D8-760E-426F-85DA-E51FD13797C8}|Repository\\Repository.csproj|c:\\fptu\\projects\\prn212\\tour-management\\repository\\ipaymentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A78037D8-760E-426F-85DA-E51FD13797C8}|Repository\\Repository.csproj|solutionrelative:repository\\ipaymentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A78037D8-760E-426F-85DA-E51FD13797C8}|Repository\\Repository.csproj|c:\\fptu\\projects\\prn212\\tour-management\\repository\\icustomerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A78037D8-760E-426F-85DA-E51FD13797C8}|Repository\\Repository.csproj|solutionrelative:repository\\icustomerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A78037D8-760E-426F-85DA-E51FD13797C8}|Repository\\Repository.csproj|c:\\fptu\\projects\\prn212\\tour-management\\repository\\ibookingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A78037D8-760E-426F-85DA-E51FD13797C8}|Repository\\Repository.csproj|solutionrelative:repository\\ibookingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A78037D8-760E-426F-85DA-E51FD13797C8}|Repository\\Repository.csproj|c:\\fptu\\projects\\prn212\\tour-management\\repository\\iaccountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A78037D8-760E-426F-85DA-E51FD13797C8}|Repository\\Repository.csproj|solutionrelative:repository\\iaccountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A78037D8-760E-426F-85DA-E51FD13797C8}|Repository\\Repository.csproj|c:\\fptu\\projects\\prn212\\tour-management\\repository\\customerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A78037D8-760E-426F-85DA-E51FD13797C8}|Repository\\Repository.csproj|solutionrelative:repository\\customerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A78037D8-760E-426F-85DA-E51FD13797C8}|Repository\\Repository.csproj|c:\\fptu\\projects\\prn212\\tour-management\\repository\\bookingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A78037D8-760E-426F-85DA-E51FD13797C8}|Repository\\Repository.csproj|solutionrelative:repository\\bookingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A78037D8-760E-426F-85DA-E51FD13797C8}|Repository\\Repository.csproj|c:\\fptu\\projects\\prn212\\tour-management\\repository\\accountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A78037D8-760E-426F-85DA-E51FD13797C8}|Repository\\Repository.csproj|solutionrelative:repository\\accountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ScheduleDialog.xaml",
+              "DocumentMoniker": "C:\\FPTU\\Projects\\PRN212\\Tour-Management\\Presentation\\ScheduleDialog.xaml",
+              "RelativeDocumentMoniker": "Presentation\\ScheduleDialog.xaml",
+              "ToolTip": "C:\\FPTU\\Projects\\PRN212\\Tour-Management\\Presentation\\ScheduleDialog.xaml",
+              "RelativeToolTip": "Presentation\\ScheduleDialog.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-06-18T07:36:24.672Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "MyBookingsPage.xaml",
+              "DocumentMoniker": "C:\\FPTU\\Projects\\PRN212\\Tour-Management\\Presentation\\MyBookingsPage.xaml",
+              "RelativeDocumentMoniker": "Presentation\\MyBookingsPage.xaml",
+              "ToolTip": "C:\\FPTU\\Projects\\PRN212\\Tour-Management\\Presentation\\MyBookingsPage.xaml",
+              "RelativeToolTip": "Presentation\\MyBookingsPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-06-18T07:36:22.003Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\FPTU\\Projects\\PRN212\\Tour-Management\\DataAccess\\Program.cs",
+              "RelativeDocumentMoniker": "DataAccess\\Program.cs",
+              "ToolTip": "C:\\FPTU\\Projects\\PRN212\\Tour-Management\\DataAccess\\Program.cs",
+              "RelativeToolTip": "DataAccess\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-18T07:28:43.369Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "TourPage.xaml",
+              "DocumentMoniker": "C:\\FPTU\\Projects\\PRN212\\Tour-Management\\Presentation\\TourPage.xaml",
+              "RelativeDocumentMoniker": "Presentation\\TourPage.xaml",
+              "ToolTip": "C:\\FPTU\\Projects\\PRN212\\Tour-Management\\Presentation\\TourPage.xaml",
+              "RelativeToolTip": "Presentation\\TourPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-06-18T07:36:39.983Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LoginWindow.xaml",
+              "DocumentMoniker": "C:\\FPTU\\Projects\\PRN212\\Tour-Management\\Presentation\\LoginWindow.xaml",
+              "RelativeDocumentMoniker": "Presentation\\LoginWindow.xaml",
+              "ToolTip": "C:\\FPTU\\Projects\\PRN212\\Tour-Management\\Presentation\\LoginWindow.xaml",
+              "RelativeToolTip": "Presentation\\LoginWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-06-18T07:33:44.922Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AccountPage.xaml",
+              "DocumentMoniker": "C:\\FPTU\\Projects\\PRN212\\Tour-Management\\Presentation\\AccountPage.xaml",
+              "RelativeDocumentMoniker": "Presentation\\AccountPage.xaml",
+              "ToolTip": "C:\\FPTU\\Projects\\PRN212\\Tour-Management\\Presentation\\AccountPage.xaml",
+              "RelativeToolTip": "Presentation\\AccountPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-06-18T07:33:39.015Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "SchedulePage.xaml",
+              "DocumentMoniker": "C:\\FPTU\\Projects\\PRN212\\Tour-Management\\Presentation\\SchedulePage.xaml",
+              "RelativeDocumentMoniker": "Presentation\\SchedulePage.xaml",
+              "ToolTip": "C:\\FPTU\\Projects\\PRN212\\Tour-Management\\Presentation\\SchedulePage.xaml",
+              "RelativeToolTip": "Presentation\\SchedulePage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-06-18T07:36:27.417Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "TourDialog.xaml",
+              "DocumentMoniker": "C:\\FPTU\\Projects\\PRN212\\Tour-Management\\Presentation\\TourDialog.xaml",
+              "RelativeDocumentMoniker": "Presentation\\TourDialog.xaml",
+              "ToolTip": "C:\\FPTU\\Projects\\PRN212\\Tour-Management\\Presentation\\TourDialog.xaml",
+              "RelativeToolTip": "Presentation\\TourDialog.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-06-18T07:36:29.603Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "SessionManager.cs",
+              "DocumentMoniker": "C:\\FPTU\\Projects\\PRN212\\Tour-Management\\Presentation\\SessionManager.cs",
+              "RelativeDocumentMoniker": "Presentation\\SessionManager.cs",
+              "ToolTip": "C:\\FPTU\\Projects\\PRN212\\Tour-Management\\Presentation\\SessionManager.cs",
+              "RelativeToolTip": "Presentation\\SessionManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-18T07:36:31.033Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Repository.csproj",
+              "DocumentMoniker": "C:\\FPTU\\Projects\\PRN212\\Tour-Management\\Repository\\Repository.csproj",
+              "RelativeDocumentMoniker": "Repository\\Repository.csproj",
+              "ToolTip": "C:\\FPTU\\Projects\\PRN212\\Tour-Management\\Repository\\Repository.csproj",
+              "RelativeToolTip": "Repository\\Repository.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-06-18T07:36:42.688Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\FPTU\\Projects\\PRN212\\Tour-Management\\DataAccess\\appsettings.json",
+              "RelativeDocumentMoniker": "DataAccess\\appsettings.json",
+              "ToolTip": "C:\\FPTU\\Projects\\PRN212\\Tour-Management\\DataAccess\\appsettings.json",
+              "RelativeToolTip": "DataAccess\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-07-01T19:20:48.081Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AccountDialog.xaml.cs",
+              "DocumentMoniker": "C:\\FPTU\\Projects\\PRN212\\Tour-Management\\Presentation\\AccountDialog.xaml.cs",
+              "RelativeDocumentMoniker": "Presentation\\AccountDialog.xaml.cs",
+              "ToolTip": "C:\\FPTU\\Projects\\PRN212\\Tour-Management\\Presentation\\AccountDialog.xaml.cs",
+              "RelativeToolTip": "Presentation\\AccountDialog.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-01T19:20:57.975Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "CustomerWindow.xaml",
+              "DocumentMoniker": "C:\\FPTU\\Projects\\PRN212\\Tour-Management\\Presentation\\CustomerWindow.xaml",
+              "RelativeDocumentMoniker": "Presentation\\CustomerWindow.xaml",
+              "ToolTip": "C:\\FPTU\\Projects\\PRN212\\Tour-Management\\Presentation\\CustomerWindow.xaml",
+              "RelativeToolTip": "Presentation\\CustomerWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-06-18T07:36:01.824Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "CustomerPage.xaml",
+              "DocumentMoniker": "C:\\FPTU\\Projects\\PRN212\\Tour-Management\\Presentation\\CustomerPage.xaml",
+              "RelativeDocumentMoniker": "Presentation\\CustomerPage.xaml",
+              "ToolTip": "C:\\FPTU\\Projects\\PRN212\\Tour-Management\\Presentation\\CustomerPage.xaml",
+              "RelativeToolTip": "Presentation\\CustomerPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-06-18T07:35:59.967Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "BookTourPage.xaml",
+              "DocumentMoniker": "C:\\FPTU\\Projects\\PRN212\\Tour-Management\\Presentation\\BookTourPage.xaml",
+              "RelativeDocumentMoniker": "Presentation\\BookTourPage.xaml",
+              "ToolTip": "C:\\FPTU\\Projects\\PRN212\\Tour-Management\\Presentation\\BookTourPage.xaml",
+              "RelativeToolTip": "Presentation\\BookTourPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-06-18T07:35:57.291Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "BookingPage.xaml",
+              "DocumentMoniker": "C:\\FPTU\\Projects\\PRN212\\Tour-Management\\Presentation\\BookingPage.xaml",
+              "RelativeDocumentMoniker": "Presentation\\BookingPage.xaml",
+              "ToolTip": "C:\\FPTU\\Projects\\PRN212\\Tour-Management\\Presentation\\BookingPage.xaml",
+              "RelativeToolTip": "Presentation\\BookingPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-06-18T07:35:53.402Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "AdminWindow.xaml",
+              "DocumentMoniker": "C:\\FPTU\\Projects\\PRN212\\Tour-Management\\Presentation\\AdminWindow.xaml",
+              "RelativeDocumentMoniker": "Presentation\\AdminWindow.xaml",
+              "ToolTip": "C:\\FPTU\\Projects\\PRN212\\Tour-Management\\Presentation\\AdminWindow.xaml",
+              "RelativeToolTip": "Presentation\\AdminWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-06-18T07:35:40.484Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "AccountDialog.xaml",
+              "DocumentMoniker": "C:\\FPTU\\Projects\\PRN212\\Tour-Management\\Presentation\\AccountDialog.xaml",
+              "RelativeDocumentMoniker": "Presentation\\AccountDialog.xaml",
+              "ToolTip": "C:\\FPTU\\Projects\\PRN212\\Tour-Management\\Presentation\\AccountDialog.xaml",
+              "RelativeToolTip": "Presentation\\AccountDialog.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-06-18T07:33:33.762Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\FPTU\\Projects\\PRN212\\Tour-Management\\Presentation\\App.xaml",
+              "RelativeDocumentMoniker": "Presentation\\App.xaml",
+              "ToolTip": "C:\\FPTU\\Projects\\PRN212\\Tour-Management\\Presentation\\App.xaml",
+              "RelativeToolTip": "Presentation\\App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-06-18T07:32:52.241Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "TourService.cs",
+              "DocumentMoniker": "C:\\FPTU\\Projects\\PRN212\\Tour-Management\\Service\\TourService.cs",
+              "RelativeDocumentMoniker": "Service\\TourService.cs",
+              "ToolTip": "C:\\FPTU\\Projects\\PRN212\\Tour-Management\\Service\\TourService.cs",
+              "RelativeToolTip": "Service\\TourService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-18T07:32:34.497Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "CustomerService.cs",
+              "DocumentMoniker": "C:\\FPTU\\Projects\\PRN212\\Tour-Management\\Service\\CustomerService.cs",
+              "RelativeDocumentMoniker": "Service\\CustomerService.cs",
+              "ToolTip": "C:\\FPTU\\Projects\\PRN212\\Tour-Management\\Service\\CustomerService.cs",
+              "RelativeToolTip": "Service\\CustomerService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-18T07:30:32.898Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "AccountService.cs",
+              "DocumentMoniker": "C:\\FPTU\\Projects\\PRN212\\Tour-Management\\Service\\AccountService.cs",
+              "RelativeDocumentMoniker": "Service\\AccountService.cs",
+              "ToolTip": "C:\\FPTU\\Projects\\PRN212\\Tour-Management\\Service\\AccountService.cs",
+              "RelativeToolTip": "Service\\AccountService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-18T07:30:30.999Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "TourRepository.cs",
+              "DocumentMoniker": "C:\\FPTU\\Projects\\PRN212\\Tour-Management\\Repository\\TourRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\TourRepository.cs",
+              "ToolTip": "C:\\FPTU\\Projects\\PRN212\\Tour-Management\\Repository\\TourRepository.cs",
+              "RelativeToolTip": "Repository\\TourRepository.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAmwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-18T07:30:23.133Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "ScheduleRepository.cs",
+              "DocumentMoniker": "C:\\FPTU\\Projects\\PRN212\\Tour-Management\\Repository\\ScheduleRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\ScheduleRepository.cs",
+              "ToolTip": "C:\\FPTU\\Projects\\PRN212\\Tour-Management\\Repository\\ScheduleRepository.cs",
+              "RelativeToolTip": "Repository\\ScheduleRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-18T07:30:21.115Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "ITourRepository.cs",
+              "DocumentMoniker": "C:\\FPTU\\Projects\\PRN212\\Tour-Management\\Repository\\ITourRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\ITourRepository.cs",
+              "ToolTip": "C:\\FPTU\\Projects\\PRN212\\Tour-Management\\Repository\\ITourRepository.cs",
+              "RelativeToolTip": "Repository\\ITourRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-18T07:30:19.385Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "PaymentRepository.cs",
+              "DocumentMoniker": "C:\\FPTU\\Projects\\PRN212\\Tour-Management\\Repository\\PaymentRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\PaymentRepository.cs",
+              "ToolTip": "C:\\FPTU\\Projects\\PRN212\\Tour-Management\\Repository\\PaymentRepository.cs",
+              "RelativeToolTip": "Repository\\PaymentRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-18T07:30:18.027Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "IScheduleRepository.cs",
+              "DocumentMoniker": "C:\\FPTU\\Projects\\PRN212\\Tour-Management\\Repository\\IScheduleRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\IScheduleRepository.cs",
+              "ToolTip": "C:\\FPTU\\Projects\\PRN212\\Tour-Management\\Repository\\IScheduleRepository.cs",
+              "RelativeToolTip": "Repository\\IScheduleRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-18T07:30:15.58Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "BookingService.cs",
+              "DocumentMoniker": "C:\\FPTU\\Projects\\PRN212\\Tour-Management\\Service\\BookingService.cs",
+              "RelativeDocumentMoniker": "Service\\BookingService.cs",
+              "ToolTip": "C:\\FPTU\\Projects\\PRN212\\Tour-Management\\Service\\BookingService.cs",
+              "RelativeToolTip": "Service\\BookingService.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAwwCMAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-18T07:24:35.526Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Booking.cs",
+              "DocumentMoniker": "C:\\FPTU\\Projects\\PRN212\\Tour-Management\\DataAccess\\DataAccess\\Booking.cs",
+              "RelativeDocumentMoniker": "DataAccess\\DataAccess\\Booking.cs",
+              "ToolTip": "C:\\FPTU\\Projects\\PRN212\\Tour-Management\\DataAccess\\DataAccess\\Booking.cs",
+              "RelativeToolTip": "DataAccess\\DataAccess\\Booking.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAA9wAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-18T07:31:16.745Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "IGenericRepository.cs",
+              "DocumentMoniker": "C:\\FPTU\\Projects\\PRN212\\Tour-Management\\Repository\\IGenericRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\IGenericRepository.cs",
+              "ToolTip": "C:\\FPTU\\Projects\\PRN212\\Tour-Management\\Repository\\IGenericRepository.cs",
+              "RelativeToolTip": "Repository\\IGenericRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-18T07:30:13.021Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "IPaymentRepository.cs",
+              "DocumentMoniker": "C:\\FPTU\\Projects\\PRN212\\Tour-Management\\Repository\\IPaymentRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\IPaymentRepository.cs",
+              "ToolTip": "C:\\FPTU\\Projects\\PRN212\\Tour-Management\\Repository\\IPaymentRepository.cs",
+              "RelativeToolTip": "Repository\\IPaymentRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-18T07:30:11.643Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "ICustomerRepository.cs",
+              "DocumentMoniker": "C:\\FPTU\\Projects\\PRN212\\Tour-Management\\Repository\\ICustomerRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\ICustomerRepository.cs",
+              "ToolTip": "C:\\FPTU\\Projects\\PRN212\\Tour-Management\\Repository\\ICustomerRepository.cs",
+              "RelativeToolTip": "Repository\\ICustomerRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-18T07:30:10.252Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "IBookingRepository.cs",
+              "DocumentMoniker": "C:\\FPTU\\Projects\\PRN212\\Tour-Management\\Repository\\IBookingRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\IBookingRepository.cs",
+              "ToolTip": "C:\\FPTU\\Projects\\PRN212\\Tour-Management\\Repository\\IBookingRepository.cs",
+              "RelativeToolTip": "Repository\\IBookingRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-18T07:30:08.567Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "IAccountRepository.cs",
+              "DocumentMoniker": "C:\\FPTU\\Projects\\PRN212\\Tour-Management\\Repository\\IAccountRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\IAccountRepository.cs",
+              "ToolTip": "C:\\FPTU\\Projects\\PRN212\\Tour-Management\\Repository\\IAccountRepository.cs",
+              "RelativeToolTip": "Repository\\IAccountRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-18T07:30:06.516Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "CustomerRepository.cs",
+              "DocumentMoniker": "C:\\FPTU\\Projects\\PRN212\\Tour-Management\\Repository\\CustomerRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\CustomerRepository.cs",
+              "ToolTip": "C:\\FPTU\\Projects\\PRN212\\Tour-Management\\Repository\\CustomerRepository.cs",
+              "RelativeToolTip": "Repository\\CustomerRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-18T07:30:03.124Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "BookingRepository.cs",
+              "DocumentMoniker": "C:\\FPTU\\Projects\\PRN212\\Tour-Management\\Repository\\BookingRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\BookingRepository.cs",
+              "ToolTip": "C:\\FPTU\\Projects\\PRN212\\Tour-Management\\Repository\\BookingRepository.cs",
+              "RelativeToolTip": "Repository\\BookingRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-18T07:29:59.975Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "AccountRepository.cs",
+              "DocumentMoniker": "C:\\FPTU\\Projects\\PRN212\\Tour-Management\\Repository\\AccountRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\AccountRepository.cs",
+              "ToolTip": "C:\\FPTU\\Projects\\PRN212\\Tour-Management\\Repository\\AccountRepository.cs",
+              "RelativeToolTip": "Repository\\AccountRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-18T07:29:56.378Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

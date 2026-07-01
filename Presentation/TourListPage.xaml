@@ -1,0 +1,40 @@
+<Page x:Class="Presentation.TourListPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      Title="Xem Tour" Background="#F8FAFC">
+    <Grid Margin="24">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row="0" Text="Danh sách Tour" FontSize="22" FontWeight="Bold"
+                   Foreground="#064E3B" Margin="0,0,0,16"/>
+
+        <Grid Grid.Row="1" Margin="0,0,0,12">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <TextBox x:Name="txtSearch" Grid.Column="0" Height="36" Padding="10,6"
+                     FontSize="13" BorderBrush="#D1D5DB" Margin="0,0,8,0" KeyUp="txtSearch_KeyUp"/>
+            <Button Grid.Column="1" Content="🔍 Tìm kiếm" Height="36" Padding="14,0"
+                    Background="#064E3B" Foreground="White" BorderThickness="0"
+                    FontSize="13" Cursor="Hand" Click="btnSearch_Click"/>
+        </Grid>
+
+        <DataGrid Grid.Row="2" x:Name="dgTour" AutoGenerateColumns="False"
+                  IsReadOnly="True" SelectionMode="Single" Background="White"
+                  BorderBrush="#E5E7EB" GridLinesVisibility="Horizontal"
+                  AlternatingRowBackground="#F9FAFB" FontSize="13">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Tên Tour" Binding="{Binding TourName}" Width="200"/>
+                <DataGridTextColumn Header="Điểm đến" Binding="{Binding Destination}" Width="150"/>
+                <DataGridTextColumn Header="Mô tả" Binding="{Binding Description}" Width="200"/>
+                <DataGridTextColumn Header="Giá" Binding="{Binding Price, StringFormat={}{0:N0} VNĐ}" Width="130"/>
+                <DataGridTextColumn Header="Số chỗ tối đa" Binding="{Binding MaxSlot}" Width="110"/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Page>
