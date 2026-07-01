@@ -1,0 +1,276 @@
+USE [master]
+GO
+/****** Object:  Database [TourManagementDB]    Script Date: 7/2/2026 2:44:03 AM ******/
+CREATE DATABASE [TourManagementDB]
+ CONTAINMENT = NONE
+ ON  PRIMARY 
+( NAME = N'TourManagementDB', FILENAME = N'C:\FPTU\Dev Tools\MSSQL15.MSSQLSERVER\MSSQL\DATA\TourManagementDB.mdf' , SIZE = 8192KB , MAXSIZE = UNLIMITED, FILEGROWTH = 65536KB )
+ LOG ON 
+( NAME = N'TourManagementDB_log', FILENAME = N'C:\FPTU\Dev Tools\MSSQL15.MSSQLSERVER\MSSQL\DATA\TourManagementDB_log.ldf' , SIZE = 8192KB , MAXSIZE = 2048GB , FILEGROWTH = 65536KB )
+ WITH CATALOG_COLLATION = DATABASE_DEFAULT
+GO
+ALTER DATABASE [TourManagementDB] SET COMPATIBILITY_LEVEL = 150
+GO
+IF (1 = FULLTEXTSERVICEPROPERTY('IsFullTextInstalled'))
+begin
+EXEC [TourManagementDB].[dbo].[sp_fulltext_database] @action = 'enable'
+end
+GO
+ALTER DATABASE [TourManagementDB] SET ANSI_NULL_DEFAULT OFF 
+GO
+ALTER DATABASE [TourManagementDB] SET ANSI_NULLS OFF 
+GO
+ALTER DATABASE [TourManagementDB] SET ANSI_PADDING OFF 
+GO
+ALTER DATABASE [TourManagementDB] SET ANSI_WARNINGS OFF 
+GO
+ALTER DATABASE [TourManagementDB] SET ARITHABORT OFF 
+GO
+ALTER DATABASE [TourManagementDB] SET AUTO_CLOSE OFF 
+GO
+ALTER DATABASE [TourManagementDB] SET AUTO_SHRINK OFF 
+GO
+ALTER DATABASE [TourManagementDB] SET AUTO_UPDATE_STATISTICS ON 
+GO
+ALTER DATABASE [TourManagementDB] SET CURSOR_CLOSE_ON_COMMIT OFF 
+GO
+ALTER DATABASE [TourManagementDB] SET CURSOR_DEFAULT  GLOBAL 
+GO
+ALTER DATABASE [TourManagementDB] SET CONCAT_NULL_YIELDS_NULL OFF 
+GO
+ALTER DATABASE [TourManagementDB] SET NUMERIC_ROUNDABORT OFF 
+GO
+ALTER DATABASE [TourManagementDB] SET QUOTED_IDENTIFIER OFF 
+GO
+ALTER DATABASE [TourManagementDB] SET RECURSIVE_TRIGGERS OFF 
+GO
+ALTER DATABASE [TourManagementDB] SET  ENABLE_BROKER 
+GO
+ALTER DATABASE [TourManagementDB] SET AUTO_UPDATE_STATISTICS_ASYNC OFF 
+GO
+ALTER DATABASE [TourManagementDB] SET DATE_CORRELATION_OPTIMIZATION OFF 
+GO
+ALTER DATABASE [TourManagementDB] SET TRUSTWORTHY OFF 
+GO
+ALTER DATABASE [TourManagementDB] SET ALLOW_SNAPSHOT_ISOLATION OFF 
+GO
+ALTER DATABASE [TourManagementDB] SET PARAMETERIZATION SIMPLE 
+GO
+ALTER DATABASE [TourManagementDB] SET READ_COMMITTED_SNAPSHOT OFF 
+GO
+ALTER DATABASE [TourManagementDB] SET HONOR_BROKER_PRIORITY OFF 
+GO
+ALTER DATABASE [TourManagementDB] SET RECOVERY FULL 
+GO
+ALTER DATABASE [TourManagementDB] SET  MULTI_USER 
+GO
+ALTER DATABASE [TourManagementDB] SET PAGE_VERIFY CHECKSUM  
+GO
+ALTER DATABASE [TourManagementDB] SET DB_CHAINING OFF 
+GO
+ALTER DATABASE [TourManagementDB] SET FILESTREAM( NON_TRANSACTED_ACCESS = OFF ) 
+GO
+ALTER DATABASE [TourManagementDB] SET TARGET_RECOVERY_TIME = 60 SECONDS 
+GO
+ALTER DATABASE [TourManagementDB] SET DELAYED_DURABILITY = DISABLED 
+GO
+ALTER DATABASE [TourManagementDB] SET ACCELERATED_DATABASE_RECOVERY = OFF  
+GO
+EXEC sys.sp_db_vardecimal_storage_format N'TourManagementDB', N'ON'
+GO
+ALTER DATABASE [TourManagementDB] SET QUERY_STORE = OFF
+GO
+USE [TourManagementDB]
+GO
+/****** Object:  Table [dbo].[Account]    Script Date: 7/2/2026 2:44:03 AM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Account](
+	[AccountId] [int] IDENTITY(1,1) NOT NULL,
+	[Username] [nvarchar](50) NOT NULL,
+	[Password] [nvarchar](50) NOT NULL,
+	[Role] [nvarchar](10) NOT NULL,
+	[IsActive] [bit] NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[AccountId] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Booking]    Script Date: 7/2/2026 2:44:03 AM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Booking](
+	[BookingId] [int] IDENTITY(1,1) NOT NULL,
+	[CustomerId] [int] NOT NULL,
+	[ScheduleId] [int] NOT NULL,
+	[BookingDate] [datetime] NULL,
+	[NumberOfPeople] [int] NOT NULL,
+	[TotalPrice] [decimal](10, 0) NOT NULL,
+	[Status] [nvarchar](20) NOT NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[BookingId] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Customer]    Script Date: 7/2/2026 2:44:03 AM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Customer](
+	[CustomerId] [int] IDENTITY(1,1) NOT NULL,
+	[AccountId] [int] NOT NULL,
+	[FullName] [nvarchar](100) NOT NULL,
+	[Phone] [varchar](15) NOT NULL,
+	[Email] [nvarchar](100) NOT NULL,
+	[Address] [nvarchar](200) NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[CustomerId] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Payment]    Script Date: 7/2/2026 2:44:03 AM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Payment](
+	[PaymentId] [int] IDENTITY(1,1) NOT NULL,
+	[BookingId] [int] NOT NULL,
+	[Amount] [decimal](10, 0) NOT NULL,
+	[PaymentDate] [datetime] NULL,
+	[PaymentMethod] [nvarchar](20) NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[PaymentId] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Schedule]    Script Date: 7/2/2026 2:44:03 AM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Schedule](
+	[ScheduleId] [int] IDENTITY(1,1) NOT NULL,
+	[TourId] [int] NOT NULL,
+	[DepartureDate] [date] NOT NULL,
+	[ReturnDate] [date] NOT NULL,
+	[AvailableSlot] [int] NOT NULL,
+	[Status] [nvarchar](20) NOT NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[ScheduleId] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Tour]    Script Date: 7/2/2026 2:44:03 AM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Tour](
+	[TourId] [int] IDENTITY(1,1) NOT NULL,
+	[TourName] [nvarchar](200) NOT NULL,
+	[Destination] [nvarchar](200) NOT NULL,
+	[Description] [nvarchar](500) NULL,
+	[Price] [decimal](10, 0) NOT NULL,
+	[MaxSlot] [int] NOT NULL,
+	[IsActive] [bit] NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[TourId] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+ALTER TABLE [dbo].[Account] ADD  DEFAULT ((1)) FOR [IsActive]
+GO
+ALTER TABLE [dbo].[Booking] ADD  DEFAULT (getdate()) FOR [BookingDate]
+GO
+ALTER TABLE [dbo].[Payment] ADD  DEFAULT (getdate()) FOR [PaymentDate]
+GO
+ALTER TABLE [dbo].[Tour] ADD  DEFAULT ((1)) FOR [IsActive]
+GO
+ALTER TABLE [dbo].[Booking]  WITH CHECK ADD FOREIGN KEY([CustomerId])
+REFERENCES [dbo].[Customer] ([CustomerId])
+GO
+ALTER TABLE [dbo].[Booking]  WITH CHECK ADD FOREIGN KEY([ScheduleId])
+REFERENCES [dbo].[Schedule] ([ScheduleId])
+GO
+ALTER TABLE [dbo].[Customer]  WITH CHECK ADD FOREIGN KEY([AccountId])
+REFERENCES [dbo].[Account] ([AccountId])
+GO
+ALTER TABLE [dbo].[Payment]  WITH CHECK ADD FOREIGN KEY([BookingId])
+REFERENCES [dbo].[Booking] ([BookingId])
+GO
+ALTER TABLE [dbo].[Schedule]  WITH CHECK ADD FOREIGN KEY([TourId])
+REFERENCES [dbo].[Tour] ([TourId])
+GO
+USE [master]
+GO
+ALTER DATABASE [TourManagementDB] SET  READ_WRITE 
+GO
+
+
+
+
+
+-- Thêm cột CancelReason cho Booking (lưu lý do hủy booking)
+ALTER TABLE [dbo].[Booking] ADD [CancelReason] NVARCHAR(500) NULL;
+
+-- Thêm cột CreatedAt cho Account (dùng cho thống kê KH mới theo tháng)
+ALTER TABLE [dbo].[Account] ADD [CreatedAt] DATETIME DEFAULT GETDATE();
+
+
+
+-- Tài khoản Admin
+INSERT INTO Account (Username, Password, Role, IsActive, CreatedAt) 
+VALUES ('admin', 'admin123', 'Admin', 1, GETDATE());
+
+-- Tài khoản Customer mẫu
+INSERT INTO Account (Username, Password, Role, IsActive, CreatedAt) 
+VALUES ('customer1', '123456', 'Customer', 1, GETDATE());
+INSERT INTO Account (Username, Password, Role, IsActive, CreatedAt) 
+VALUES ('customer2', '123456', 'Customer', 1, GETDATE());
+
+-- Customer
+INSERT INTO Customer (AccountId, FullName, Phone, Email, Address) 
+VALUES (2, N'Nguyễn Văn A', '0901234567', 'nguyenvana@email.com', N'Hà Nội');
+INSERT INTO Customer (AccountId, FullName, Phone, Email, Address) 
+VALUES (3, N'Trần Thị B', '0912345678', 'tranthib@email.com', N'TP.HCM');
+
+-- Tour
+INSERT INTO Tour (TourName, Destination, Description, Price, MaxSlot, IsActive) 
+VALUES (N'Tour Đà Nẵng', N'Đà Nẵng', N'Khám phá Bà Nà Hills', 5000000, 30, 1);
+INSERT INTO Tour (TourName, Destination, Description, Price, MaxSlot, IsActive) 
+VALUES (N'Tour Phú Quốc', N'Phú Quốc', N'Nghỉ dưỡng biển đảo', 8000000, 20, 1);
+INSERT INTO Tour (TourName, Destination, Description, Price, MaxSlot, IsActive) 
+VALUES (N'Tour Sapa', N'Sapa', N'Trekking núi rừng', 3500000, 25, 1);
+
+-- Schedule
+INSERT INTO Schedule (TourId, DepartureDate, ReturnDate, AvailableSlot, Status) 
+VALUES (1, '2026-08-01', '2026-08-04', 28, 'Open');
+INSERT INTO Schedule (TourId, DepartureDate, ReturnDate, AvailableSlot, Status) 
+VALUES (2, '2026-08-15', '2026-08-19', 20, 'Open');
+INSERT INTO Schedule (TourId, DepartureDate, ReturnDate, AvailableSlot, Status) 
+VALUES (3, '2026-09-01', '2026-09-03', 25, 'Open');
+
+-- Booking
+INSERT INTO Booking (CustomerId, ScheduleId, BookingDate, NumberOfPeople, TotalPrice, Status) 
+VALUES (1, 1, GETDATE(), 2, 10000000, 'Pending');
+INSERT INTO Booking (CustomerId, ScheduleId, BookingDate, NumberOfPeople, TotalPrice, Status) 
+VALUES (2, 2, GETDATE(), 3, 24000000, 'Confirmed');
+
+-- Payment
+INSERT INTO Payment (BookingId, Amount, PaymentDate, PaymentMethod) 
+VALUES (2, 24000000, GETDATE(), 'Cash');
+
+
+
