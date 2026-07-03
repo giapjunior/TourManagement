@@ -1,4 +1,4 @@
-﻿using DataAccess.DataAccess;
+using DataAccess.DataAccess;
 
 namespace Repository
 {
@@ -41,6 +41,25 @@ namespace Repository
             => _context.Tours
                 .Where(t => t.TourName.Contains(keyword) || t.Destination.Contains(keyword))
                 .ToList();
+
+        public List<Tour> AdvancedSearch(string keyword, decimal? maxPrice, System.DateTime? departureDate)
+        {
+            var query = _context.Tours.AsQueryable();
+            
+            if (!string.IsNullOrWhiteSpace(keyword))
+                query = query.Where(t => t.TourName.Contains(keyword) || t.Destination.Contains(keyword));
+            
+            if (maxPrice.HasValue)
+                query = query.Where(t => t.Price <= maxPrice.Value);
+            
+            if (departureDate.HasValue)
+            {
+                var dDate = System.DateOnly.FromDateTime(departureDate.Value);
+                query = query.Where(t => t.Schedules.Any(s => s.DepartureDate >= dDate && s.Status != "Cancelled"));
+            }
+            
+            return query.Where(t => t.IsActive == true).ToList();
+        }
 
         public List<Tour> GetActive()
             => _context.Tours.Where(t => t.IsActive == true).ToList();

@@ -24,6 +24,23 @@
                 <DataGridTextColumn Header="Tổng tiền" Binding="{Binding TotalPrice, StringFormat={}{0:N0} VNĐ}" Width="140"/>
                 <DataGridTextColumn Header="Ngày đặt" Binding="{Binding BookingDate}" Width="110"/>
                 <DataGridTextColumn Header="Trạng thái" Binding="{Binding Status}" Width="110"/>
+                <DataGridTemplateColumn Header="Thao tác" Width="210">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <StackPanel Orientation="Horizontal">
+                                <Button Content="Chi tiết" Height="26" Width="55" Margin="0,0,5,0"
+                                        Background="#3B82F6" Foreground="White" BorderThickness="0"
+                                        FontSize="11" Cursor="Hand" Click="btnDetail_Click" Tag="{Binding BookingId}"/>
+                                <Button Content="Thanh toán" Height="26" Width="70" Margin="0,0,5,0"
+                                        Background="#10B981" Foreground="White" BorderThickness="0"
+                                        FontSize="11" Cursor="Hand" Click="btnPay_Click" Tag="{Binding}"/>
+                                <Button Content="Hủy" Height="26" Width="50"
+                                        Background="#EF4444" Foreground="White" BorderThickness="0"
+                                        FontSize="11" Cursor="Hand" Click="btnCancel_Click" Tag="{Binding BookingId}"/>
+                            </StackPanel>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
             </DataGrid.Columns>
         </DataGrid>
     </Grid>

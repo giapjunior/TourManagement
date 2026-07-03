@@ -1,7 +1,7 @@
 {
-  "version": 3,
+  "version": 4,
   "targets": {
-    "net8.0-windows7.0": {
+    "net8.0-windows": {
       "Azure.Core/1.38.0": {
         "type": "package",
         "dependencies": {
@@ -4321,7 +4321,7 @@
     }
   },
   "projectFileDependencyGroups": {
-    "net8.0-windows7.0": [
+    "net8.0-windows": [
       "Microsoft.EntityFrameworkCore >= 8.0.28",
       "Microsoft.EntityFrameworkCore.Design >= 8.0.28",
       "Microsoft.EntityFrameworkCore.SqlServer >= 8.0.28",
@@ -4330,24 +4330,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\doand\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\laptop368\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\FPTU\\Projects\\PRN212\\Tour-Management\\Presentation\\Presentation.csproj",
+      "projectUniqueName": "D:\\TourManagement\\Presentation\\Presentation.csproj",
       "projectName": "Presentation",
-      "projectPath": "C:\\FPTU\\Projects\\PRN212\\Tour-Management\\Presentation\\Presentation.csproj",
-      "packagesPath": "C:\\Users\\doand\\.nuget\\packages\\",
-      "outputPath": "C:\\FPTU\\Projects\\PRN212\\Tour-Management\\Presentation\\obj\\",
+      "projectPath": "D:\\TourManagement\\Presentation\\Presentation.csproj",
+      "packagesPath": "C:\\Users\\laptop368\\.nuget\\packages\\",
+      "outputPath": "D:\\TourManagement\\Presentation\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\doand\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\laptop368\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4358,11 +4353,12 @@
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net8.0-windows7.0": {
+        "net8.0-windows": {
+          "framework": "net8.0-windows7.0",
           "targetAlias": "net8.0-windows",
           "projectReferences": {
-            "C:\\FPTU\\Projects\\PRN212\\Tour-Management\\Service\\Service.csproj": {
-              "projectPath": "C:\\FPTU\\Projects\\PRN212\\Tour-Management\\Service\\Service.csproj"
+            "D:\\TourManagement\\Service\\Service.csproj": {
+              "projectPath": "D:\\TourManagement\\Service\\Service.csproj"
             }
           }
         }
@@ -4377,10 +4373,11 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.300"
+      "SdkAnalysisLevel": "10.0.300"
     },
     "frameworks": {
-      "net8.0-windows7.0": {
+      "net8.0-windows": {
+        "framework": "net8.0-windows7.0",
         "targetAlias": "net8.0-windows",
         "dependencies": {
           "Microsoft.EntityFrameworkCore": {
@@ -4421,7 +4418,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.313/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.301/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

@@ -3,31 +3,6 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="Tour Management - Khách hàng" Height="640" Width="980"
         WindowStartupLocation="CenterScreen">
-    <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="180"/>
-            <ColumnDefinition Width="*"/>
-        </Grid.ColumnDefinitions>
-
-        <!-- Sidebar -->
-        <StackPanel Grid.Column="0" Background="#064E3B">
-            <TextBlock Text="🌍 Tour" FontSize="16" FontWeight="Bold"
-                       Foreground="White" Margin="20,24,20,8" HorizontalAlignment="Center"/>
-            <TextBlock x:Name="txtWelcome" Text="Xin chào!" FontSize="11"
-                       Foreground="#A7F3D0" HorizontalAlignment="Center" Margin="0,0,0,24"/>
-
-            <Button Content="🗺️  Xem Tour" Style="{StaticResource CusNavBtn}" Click="btnNavTours_Click"/>
-            <Button Content="🎫  Đặt Tour" Style="{StaticResource CusNavBtn}" Click="btnNavBookTour_Click"/>
-            <Button Content="📋  Booking của tôi" Style="{StaticResource CusNavBtn}" Click="btnNavMyBookings_Click"/>
-
-            <Button Content="🚪  Đăng xuất" Style="{StaticResource CusNavBtn}" Margin="0,200,0,0" Click="btnLogout_Click"/>
-        </StackPanel>
-
-        <!-- Content -->
-        <Grid Grid.Column="1" Background="#F8FAFC">
-            <Frame x:Name="MainFrame" NavigationUIVisibility="Hidden"/>
-        </Grid>
-    </Grid>
 
     <Window.Resources>
         <Style x:Key="CusNavBtn" TargetType="Button">
@@ -55,4 +30,32 @@
             </Setter>
         </Style>
     </Window.Resources>
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="180"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <!-- Sidebar -->
+        <StackPanel Grid.Column="0" Background="#064E3B">
+            <TextBlock Text="🌍 Tour" FontSize="16" FontWeight="Bold"
+                       Foreground="White" Margin="20,24,20,8" HorizontalAlignment="Center"/>
+            <TextBlock x:Name="txtWelcome" Text="Xin chào!" FontSize="11"
+                       Foreground="#A7F3D0" HorizontalAlignment="Center" Margin="0,0,0,24"/>
+
+            <Button Content="🗺️  Xem Tour" Style="{StaticResource CusNavBtn}" Click="btnNavTours_Click"/>
+            <Button Content="🎫  Đặt Tour" Style="{StaticResource CusNavBtn}" Click="btnNavBookTour_Click"/>
+            <Button Content="📋  Booking của tôi" Style="{StaticResource CusNavBtn}" Click="btnNavMyBookings_Click"/>
+            <Button Content="💳  Lịch sử thanh toán" Style="{StaticResource CusNavBtn}" Click="btnNavPaymentHistory_Click"/>
+            <Button Content="👤  Hồ sơ của tôi" Style="{StaticResource CusNavBtn}" Click="btnNavProfile_Click"/>
+
+            <Button Content="🚪  Đăng xuất" Style="{StaticResource CusNavBtn}" Margin="0,150,0,0" Click="btnLogout_Click"/>
+        </StackPanel>
+
+        <!-- Content -->
+        <Grid Grid.Column="1" Background="#F8FAFC">
+            <Frame x:Name="MainFrame" NavigationUIVisibility="Hidden"/>
+        </Grid>
+    </Grid>
 </Window>

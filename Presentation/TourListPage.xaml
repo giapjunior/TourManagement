@@ -15,11 +15,20 @@
         <Grid Grid.Row="1" Margin="0,0,0,12">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="150"/>
+                <ColumnDefinition Width="150"/>
                 <ColumnDefinition Width="Auto"/>
             </Grid.ColumnDefinitions>
             <TextBox x:Name="txtSearch" Grid.Column="0" Height="36" Padding="10,6"
-                     FontSize="13" BorderBrush="#D1D5DB" Margin="0,0,8,0" KeyUp="txtSearch_KeyUp"/>
-            <Button Grid.Column="1" Content="🔍 Tìm kiếm" Height="36" Padding="14,0"
+                     FontSize="13" BorderBrush="#D1D5DB" Margin="0,0,8,0" 
+                     ToolTip="Tên tour hoặc điểm đến (Enter để tìm)" KeyUp="txtSearch_KeyUp"/>
+            <TextBox x:Name="txtMaxPrice" Grid.Column="1" Height="36" Padding="10,6"
+                     FontSize="13" BorderBrush="#D1D5DB" Margin="0,0,8,0" 
+                     ToolTip="Mức giá tối đa" KeyUp="txtSearch_KeyUp"/>
+            <DatePicker x:Name="dpDepartureDate" Grid.Column="2" Height="36" 
+                     FontSize="13" BorderBrush="#D1D5DB" Margin="0,0,8,0" 
+                     ToolTip="Ngày khởi hành từ"/>
+            <Button Grid.Column="3" Content="🔍 Tìm kiếm" Height="36" Padding="14,0"
                     Background="#064E3B" Foreground="White" BorderThickness="0"
                     FontSize="13" Cursor="Hand" Click="btnSearch_Click"/>
         </Grid>
@@ -34,6 +43,15 @@
                 <DataGridTextColumn Header="Mô tả" Binding="{Binding Description}" Width="200"/>
                 <DataGridTextColumn Header="Giá" Binding="{Binding Price, StringFormat={}{0:N0} VNĐ}" Width="130"/>
                 <DataGridTextColumn Header="Số chỗ tối đa" Binding="{Binding MaxSlot}" Width="110"/>
+                <DataGridTemplateColumn Header="Thao tác" Width="140">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button Content="Xem Lịch trình &amp; Đặt" Height="26"
+                                    Background="#10B981" Foreground="White" BorderThickness="0"
+                                    FontSize="11" Cursor="Hand" Click="btnBook_Click" Tag="{Binding TourId}"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
             </DataGrid.Columns>
         </DataGrid>
     </Grid>

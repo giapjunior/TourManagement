@@ -12,13 +12,19 @@ namespace Presentation
         private readonly ScheduleService _scheduleService;
         private Schedule? _selectedSchedule;
 
-        public BookTourPage()
+        public BookTourPage(int? preselectTourId = null)
         {
             InitializeComponent();
             var context = new TourManagementDbContext();
             _scheduleService = new ScheduleService(new ScheduleRepository(context), new TourRepository(context));
             _bookingService = new BookingService(new BookingRepository(context), new ScheduleRepository(context));
-            dgSchedule.ItemsSource = _scheduleService.GetAvailable();
+            
+            var schedules = _scheduleService.GetAvailable();
+            if (preselectTourId.HasValue)
+            {
+                schedules = schedules.Where(s => s.TourId == preselectTourId.Value).ToList();
+            }
+            dgSchedule.ItemsSource = schedules;
         }
 
         private void dgSchedule_SelectionChanged(object sender, SelectionChangedEventArgs e)

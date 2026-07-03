@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\FPTU\\Projects\\PRN212\\Tour-Management\\Service\\Service.csproj": {}
+    "D:\\TourManagement\\Service\\Service.csproj": {}
   },
   "projects": {
-    "C:\\FPTU\\Projects\\PRN212\\Tour-Management\\DataAccess\\DataAccess.csproj": {
+    "D:\\TourManagement\\DataAccess\\DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\FPTU\\Projects\\PRN212\\Tour-Management\\DataAccess\\DataAccess.csproj",
+        "projectUniqueName": "D:\\TourManagement\\DataAccess\\DataAccess.csproj",
         "projectName": "DataAccess",
-        "projectPath": "C:\\FPTU\\Projects\\PRN212\\Tour-Management\\DataAccess\\DataAccess.csproj",
-        "packagesPath": "C:\\Users\\doand\\.nuget\\packages\\",
-        "outputPath": "C:\\FPTU\\Projects\\PRN212\\Tour-Management\\DataAccess\\obj\\",
+        "projectPath": "D:\\TourManagement\\DataAccess\\DataAccess.csproj",
+        "packagesPath": "C:\\Users\\laptop368\\.nuget\\packages\\",
+        "outputPath": "D:\\TourManagement\\DataAccess\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\doand\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\laptop368\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -30,6 +26,7 @@
         },
         "frameworks": {
           "net8.0": {
+            "framework": "net8.0",
             "targetAlias": "net8.0",
             "projectReferences": {}
           }
@@ -44,10 +41,11 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "10.0.300"
       },
       "frameworks": {
         "net8.0": {
+          "framework": "net8.0",
           "targetAlias": "net8.0",
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
@@ -85,25 +83,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.313/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.301/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\FPTU\\Projects\\PRN212\\Tour-Management\\Repository\\Repository.csproj": {
+    "D:\\TourManagement\\Repository\\Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\FPTU\\Projects\\PRN212\\Tour-Management\\Repository\\Repository.csproj",
+        "projectUniqueName": "D:\\TourManagement\\Repository\\Repository.csproj",
         "projectName": "Repository",
-        "projectPath": "C:\\FPTU\\Projects\\PRN212\\Tour-Management\\Repository\\Repository.csproj",
-        "packagesPath": "C:\\Users\\doand\\.nuget\\packages\\",
-        "outputPath": "C:\\FPTU\\Projects\\PRN212\\Tour-Management\\Repository\\obj\\",
+        "projectPath": "D:\\TourManagement\\Repository\\Repository.csproj",
+        "packagesPath": "C:\\Users\\laptop368\\.nuget\\packages\\",
+        "outputPath": "D:\\TourManagement\\Repository\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\doand\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\laptop368\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -115,10 +109,11 @@
         },
         "frameworks": {
           "net8.0": {
+            "framework": "net8.0",
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\FPTU\\Projects\\PRN212\\Tour-Management\\DataAccess\\DataAccess.csproj": {
-                "projectPath": "C:\\FPTU\\Projects\\PRN212\\Tour-Management\\DataAccess\\DataAccess.csproj"
+              "D:\\TourManagement\\DataAccess\\DataAccess.csproj": {
+                "projectPath": "D:\\TourManagement\\DataAccess\\DataAccess.csproj"
               }
             }
           }
@@ -133,10 +128,11 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "10.0.300"
       },
       "frameworks": {
         "net8.0": {
+          "framework": "net8.0",
           "targetAlias": "net8.0",
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
@@ -174,25 +170,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.313/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.301/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\FPTU\\Projects\\PRN212\\Tour-Management\\Service\\Service.csproj": {
+    "D:\\TourManagement\\Service\\Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\FPTU\\Projects\\PRN212\\Tour-Management\\Service\\Service.csproj",
+        "projectUniqueName": "D:\\TourManagement\\Service\\Service.csproj",
         "projectName": "Service",
-        "projectPath": "C:\\FPTU\\Projects\\PRN212\\Tour-Management\\Service\\Service.csproj",
-        "packagesPath": "C:\\Users\\doand\\.nuget\\packages\\",
-        "outputPath": "C:\\FPTU\\Projects\\PRN212\\Tour-Management\\Service\\obj\\",
+        "projectPath": "D:\\TourManagement\\Service\\Service.csproj",
+        "packagesPath": "C:\\Users\\laptop368\\.nuget\\packages\\",
+        "outputPath": "D:\\TourManagement\\Service\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\doand\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\laptop368\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -204,10 +196,11 @@
         },
         "frameworks": {
           "net8.0": {
+            "framework": "net8.0",
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\FPTU\\Projects\\PRN212\\Tour-Management\\Repository\\Repository.csproj": {
-                "projectPath": "C:\\FPTU\\Projects\\PRN212\\Tour-Management\\Repository\\Repository.csproj"
+              "D:\\TourManagement\\Repository\\Repository.csproj": {
+                "projectPath": "D:\\TourManagement\\Repository\\Repository.csproj"
               }
             }
           }
@@ -222,10 +215,11 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "10.0.300"
       },
       "frameworks": {
         "net8.0": {
+          "framework": "net8.0",
           "targetAlias": "net8.0",
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
@@ -263,7 +257,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.313/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.301/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

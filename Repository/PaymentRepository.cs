@@ -41,6 +41,14 @@ namespace Repository
         public Payment? GetByBookingId(int bookingId)
             => _context.Payments.FirstOrDefault(p => p.BookingId == bookingId);
 
+        public List<Payment> GetByCustomerId(int customerId)
+            => _context.Payments
+                .Include(p => p.Booking)
+                    .ThenInclude(b => b.Schedule)
+                        .ThenInclude(s => s.Tour)
+                .Where(p => p.Booking.CustomerId == customerId)
+                .ToList();
+
         // Include Booking → Schedule → Tour cho thống kê doanh thu
         public List<Payment> GetAllWithDetails()
             => _context.Payments

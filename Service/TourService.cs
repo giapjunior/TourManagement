@@ -20,6 +20,9 @@ namespace Service
 
         public List<Tour> Search(string keyword) => _tourRepo.Search(keyword);
 
+        public List<Tour> AdvancedSearch(string keyword, decimal? maxPrice, System.DateTime? departureDate) 
+            => _tourRepo.AdvancedSearch(keyword, maxPrice, departureDate);
+
         public void Add(Tour tour)
         {
             // Validate dữ liệu đầu vào

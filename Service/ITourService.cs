@@ -8,6 +8,7 @@ namespace Service
         List<Tour> GetActive();
         Tour GetById(int id);
         List<Tour> Search(string keyword);
+        List<Tour> AdvancedSearch(string keyword, decimal? maxPrice, System.DateTime? departureDate);
         void Add(Tour tour);
         void Update(Tour tour);
         void SoftDelete(int id);

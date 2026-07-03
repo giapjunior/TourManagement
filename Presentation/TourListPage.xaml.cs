@@ -19,14 +19,30 @@ namespace Presentation
             LoadData();
         }
 
-        private void LoadData(string keyword = "")
+        private void LoadData()
         {
-            dgTour.ItemsSource = string.IsNullOrWhiteSpace(keyword)
-                ? _tourService.GetActive()
-                : _tourService.Search(keyword);
+            var keyword = txtSearch.Text.Trim();
+            decimal? maxPrice = decimal.TryParse(txtMaxPrice.Text, out decimal price) ? price : null;
+            System.DateTime? departureDate = dpDepartureDate.SelectedDate;
+
+            if (string.IsNullOrWhiteSpace(keyword) && maxPrice == null && departureDate == null)
+            {
+                dgTour.ItemsSource = _tourService.GetActive();
+            }
+            else
+            {
+                dgTour.ItemsSource = _tourService.AdvancedSearch(keyword, maxPrice, departureDate);
+            }
         }
 
-        private void btnSearch_Click(object sender, RoutedEventArgs e) => LoadData(txtSearch.Text);
-        private void txtSearch_KeyUp(object sender, KeyEventArgs e) { if (e.Key == Key.Enter) LoadData(txtSearch.Text); }
+        private void btnSearch_Click(object sender, RoutedEventArgs e) => LoadData();
+        private void txtSearch_KeyUp(object sender, KeyEventArgs e) { if (e.Key == Key.Enter) LoadData(); }
+
+        private void btnBook_Click(object sender, RoutedEventArgs e)
+        {
+            var tourId = (int)((Button)sender).Tag;
+            var window = Window.GetWindow(this) as CustomerWindow;
+            window?.MainFrame.Navigate(new BookTourPage(tourId));
+        }
     }
 }

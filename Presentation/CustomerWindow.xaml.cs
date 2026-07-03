@@ -14,6 +14,8 @@ namespace Presentation
         private void btnNavTours_Click(object sender, RoutedEventArgs e) => MainFrame.Navigate(new TourListPage());
         private void btnNavBookTour_Click(object sender, RoutedEventArgs e) => MainFrame.Navigate(new BookTourPage());
         private void btnNavMyBookings_Click(object sender, RoutedEventArgs e) => MainFrame.Navigate(new MyBookingsPage());
+        private void btnNavPaymentHistory_Click(object sender, RoutedEventArgs e) => MainFrame.Navigate(new PaymentHistoryPage());
+        private void btnNavProfile_Click(object sender, RoutedEventArgs e) => MainFrame.Navigate(new CustomerProfilePage());
 
         private void btnLogout_Click(object sender, RoutedEventArgs e)
         {

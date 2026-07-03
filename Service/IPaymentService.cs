@@ -7,6 +7,8 @@ namespace Service
         List<Payment> GetAll();
         Payment GetById(int id);
         Payment? GetByBookingId(int bookingId);
+        List<Payment> GetByCustomerId(int customerId);
         List<Payment> GetAllWithDetails();
+        void ProcessPayment(int bookingId, string method);
     }
 }
