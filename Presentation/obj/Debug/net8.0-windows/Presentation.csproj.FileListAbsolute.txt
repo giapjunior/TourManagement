@@ -357,3 +357,7 @@ D:\TourManagement\Presentation\obj\Debug\net8.0-windows\PaymentDialog.baml
 D:\TourManagement\Presentation\obj\Debug\net8.0-windows\PaymentHistoryPage.baml
 D:\TourManagement\Presentation\obj\Debug\net8.0-windows\PaymentDialog.g.cs
 D:\TourManagement\Presentation\obj\Debug\net8.0-windows\PaymentHistoryPage.g.cs
+D:\TourManagement\Presentation\obj\Debug\net8.0-windows\PaymentQRWindow.baml
+D:\TourManagement\Presentation\obj\Debug\net8.0-windows\ReviewDialog.baml
+D:\TourManagement\Presentation\obj\Debug\net8.0-windows\PaymentQRWindow.g.cs
+D:\TourManagement\Presentation\obj\Debug\net8.0-windows\ReviewDialog.g.cs

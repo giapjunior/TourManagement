@@ -4335,11 +4335,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\TourManagement\\Presentation\\Presentation.csproj",
+      "projectUniqueName": "d:\\TourManagement\\Presentation\\Presentation.csproj",
       "projectName": "Presentation",
-      "projectPath": "D:\\TourManagement\\Presentation\\Presentation.csproj",
+      "projectPath": "d:\\TourManagement\\Presentation\\Presentation.csproj",
       "packagesPath": "C:\\Users\\laptop368\\.nuget\\packages\\",
-      "outputPath": "D:\\TourManagement\\Presentation\\obj\\",
+      "outputPath": "d:\\TourManagement\\Presentation\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\laptop368\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -4357,8 +4357,8 @@
           "framework": "net8.0-windows7.0",
           "targetAlias": "net8.0-windows",
           "projectReferences": {
-            "D:\\TourManagement\\Service\\Service.csproj": {
-              "projectPath": "D:\\TourManagement\\Service\\Service.csproj"
+            "d:\\TourManagement\\Service\\Service.csproj": {
+              "projectPath": "d:\\TourManagement\\Service\\Service.csproj"
             }
           }
         }
@@ -4418,7 +4418,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.301/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.302/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\TourManagement\Presentation\obj\Debug\net8.0-windows\
+d:\TourManagement\Presentation\obj\Debug\net8.0-windows\
 Presentation
 none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER;WINDOWS7_0_OR_GREATER
-D:\TourManagement\Presentation\App.xaml
-221812216009
+d:\TourManagement\Presentation\App.xaml
+24616819875
 
-261918303077
-236-179733524
-AccountDialog.xaml;AccountPage.xaml;AdminWindow.xaml;BookingDetailDialog.xaml;BookingPage.xaml;BookTourPage.xaml;CancelReasonDialog.xaml;CustomerDetailDialog.xaml;CustomerPage.xaml;CustomerProfilePage.xaml;CustomerWindow.xaml;LoginWindow.xaml;MyBookingsPage.xaml;PaymentDialog.xaml;PaymentHistoryPage.xaml;RegisterWindow.xaml;ScheduleDialog.xaml;SchedulePage.xaml;StatisticsPage.xaml;TourDialog.xaml;TourListPage.xaml;TourPage.xaml;
+28-1812667250
+236896060233
+AccountDialog.xaml;AccountPage.xaml;AdminWindow.xaml;BookingDetailDialog.xaml;BookingPage.xaml;BookTourPage.xaml;CancelReasonDialog.xaml;CustomerDetailDialog.xaml;CustomerPage.xaml;CustomerProfilePage.xaml;CustomerWindow.xaml;LoginWindow.xaml;MyBookingsPage.xaml;PaymentDialog.xaml;PaymentHistoryPage.xaml;PaymentQRWindow.xaml;RegisterWindow.xaml;ReviewDialog.xaml;ScheduleDialog.xaml;SchedulePage.xaml;StatisticsPage.xaml;TourDialog.xaml;TourListPage.xaml;TourPage.xaml;
 
 False
 

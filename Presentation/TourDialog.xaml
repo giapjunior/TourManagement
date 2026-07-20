@@ -1,7 +1,7 @@
 <Window x:Class="Presentation.TourDialog"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Tour" Height="460" Width="420"
+        Title="Tour" Width="420" SizeToContent="Height"
         WindowStartupLocation="CenterOwner" ResizeMode="NoResize">
     <Grid Margin="28">
         <Grid.RowDefinitions>

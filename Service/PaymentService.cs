@@ -30,7 +30,7 @@ namespace Service
             if (_bookingRepo == null) throw new System.Exception("BookingRepository is required to process payment.");
             var booking = _bookingRepo.GetById(bookingId);
             if (booking == null) throw new System.Exception("Booking không tồn tại.");
-            if (booking.Status != "Pending") throw new System.Exception("Chỉ có thể thanh toán cho booking Pending.");
+            if (booking.Status != "Confirmed") throw new System.Exception("Chỉ có thể thanh toán cho booking đã được xác nhận (Confirmed).");
             
             var existingPayment = _paymentRepo.GetByBookingId(bookingId);
             if (existingPayment != null) throw new System.Exception("Booking này đã được thanh toán.");
@@ -44,7 +44,7 @@ namespace Service
             };
             _paymentRepo.Add(payment);
 
-            booking.Status = "Confirmed";
+            booking.Status = "Completed";
             _bookingRepo.Update(booking);
         }
     }

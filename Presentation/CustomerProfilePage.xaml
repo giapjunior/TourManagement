@@ -11,33 +11,40 @@
         <TextBlock Grid.Row="0" Text="Hồ sơ của tôi" FontSize="22" FontWeight="Bold"
                    Foreground="#064E3B" Margin="0,0,0,16"/>
 
-        <Border Grid.Row="1" Background="White" BorderBrush="#E5E7EB" BorderThickness="1" CornerRadius="8" Padding="24" MaxWidth="500" HorizontalAlignment="Left" VerticalAlignment="Top">
-            <StackPanel>
-                <TextBlock Text="Thông tin cá nhân" FontSize="16" FontWeight="Bold" Foreground="#064E3B" Margin="0,0,0,16"/>
+        <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled">
+            <Border Background="White" BorderBrush="#E5E7EB" BorderThickness="1" CornerRadius="8" Padding="24" MaxWidth="500" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,0,0,16">
+                <StackPanel>
+                    <Grid Margin="0,0,0,16">
+                        <TextBlock Text="Thông tin cá nhân" FontSize="16" FontWeight="Bold" Foreground="#064E3B" VerticalAlignment="Center"/>
+                        <Button x:Name="btnToggleEdit" Content="✏️ Sửa thông tin" HorizontalAlignment="Right" Background="Transparent" Foreground="#2563EB" BorderThickness="0" Cursor="Hand" Click="btnToggleEdit_Click"/>
+                    </Grid>
 
-                <TextBlock Text="Họ tên *" FontSize="12" Foreground="#374151" Margin="0,0,0,4"/>
-                <TextBox x:Name="txtFullName" Height="36" Padding="10,6" FontSize="13" BorderBrush="#D1D5DB" Margin="0,0,0,12"/>
+                    <StackPanel x:Name="pnlForm" IsEnabled="False">
+                        <TextBlock Text="Họ tên *" FontSize="12" Foreground="#374151" Margin="0,0,0,4"/>
+                        <TextBox x:Name="txtFullName" Height="36" Padding="10,6" FontSize="13" BorderBrush="#D1D5DB" Margin="0,0,0,12"/>
 
-                <TextBlock Text="Số điện thoại *" FontSize="12" Foreground="#374151" Margin="0,0,0,4"/>
-                <TextBox x:Name="txtPhone" Height="36" Padding="10,6" FontSize="13" BorderBrush="#D1D5DB" Margin="0,0,0,12"/>
+                        <TextBlock Text="Số điện thoại *" FontSize="12" Foreground="#374151" Margin="0,0,0,4"/>
+                        <TextBox x:Name="txtPhone" Height="36" Padding="10,6" FontSize="13" BorderBrush="#D1D5DB" Margin="0,0,0,12"/>
 
-                <TextBlock Text="Email *" FontSize="12" Foreground="#374151" Margin="0,0,0,4"/>
-                <TextBox x:Name="txtEmail" Height="36" Padding="10,6" FontSize="13" BorderBrush="#D1D5DB" Margin="0,0,0,12"/>
+                        <TextBlock Text="Email *" FontSize="12" Foreground="#374151" Margin="0,0,0,4"/>
+                        <TextBox x:Name="txtEmail" Height="36" Padding="10,6" FontSize="13" BorderBrush="#D1D5DB" Margin="0,0,0,12"/>
 
-                <TextBlock Text="Địa chỉ" FontSize="12" Foreground="#374151" Margin="0,0,0,4"/>
-                <TextBox x:Name="txtAddress" Height="36" Padding="10,6" FontSize="13" BorderBrush="#D1D5DB" Margin="0,0,0,24"/>
+                        <TextBlock Text="Địa chỉ" FontSize="12" Foreground="#374151" Margin="0,0,0,4"/>
+                        <TextBox x:Name="txtAddress" Height="36" Padding="10,6" FontSize="13" BorderBrush="#D1D5DB" Margin="0,0,0,24"/>
 
-                <TextBlock Text="Đổi mật khẩu (Bỏ trống nếu không đổi)" FontSize="16" FontWeight="Bold" Foreground="#064E3B" Margin="0,0,0,16"/>
+                        <TextBlock Text="Đổi mật khẩu (Bỏ trống nếu không đổi)" FontSize="16" FontWeight="Bold" Foreground="#064E3B" Margin="0,0,0,16"/>
 
-                <TextBlock Text="Mật khẩu mới" FontSize="12" Foreground="#374151" Margin="0,0,0,4"/>
-                <PasswordBox x:Name="txtPassword" Height="36" Padding="10,6" FontSize="13" BorderBrush="#D1D5DB" Margin="0,0,0,12"/>
+                        <TextBlock Text="Mật khẩu mới" FontSize="12" Foreground="#374151" Margin="0,0,0,4"/>
+                        <PasswordBox x:Name="txtPassword" Height="36" Padding="10,6" FontSize="13" BorderBrush="#D1D5DB" Margin="0,0,0,12"/>
 
-                <TextBlock Text="Xác nhận mật khẩu mới" FontSize="12" Foreground="#374151" Margin="0,0,0,4"/>
-                <PasswordBox x:Name="txtConfirmPassword" Height="36" Padding="10,6" FontSize="13" BorderBrush="#D1D5DB" Margin="0,0,0,20"/>
+                        <TextBlock Text="Xác nhận mật khẩu mới" FontSize="12" Foreground="#374151" Margin="0,0,0,4"/>
+                        <PasswordBox x:Name="txtConfirmPassword" Height="36" Padding="10,6" FontSize="13" BorderBrush="#D1D5DB" Margin="0,0,0,20"/>
 
-                <Button Content="💾 Lưu thay đổi" Height="40" Background="#064E3B" Foreground="White" BorderThickness="0"
-                        FontSize="14" FontWeight="SemiBold" Cursor="Hand" Click="btnSave_Click"/>
-            </StackPanel>
-        </Border>
+                        <Button x:Name="btnSave" Content="💾 Lưu thay đổi" Height="40" Background="#064E3B" Foreground="White" BorderThickness="0"
+                                FontSize="14" FontWeight="SemiBold" Cursor="Hand" Click="btnSave_Click" Visibility="Collapsed"/>
+                    </StackPanel>
+                </StackPanel>
+            </Border>
+        </ScrollViewer>
     </Grid>
 </Page>

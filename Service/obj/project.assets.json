@@ -4314,11 +4314,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\TourManagement\\Service\\Service.csproj",
+      "projectUniqueName": "d:\\TourManagement\\Service\\Service.csproj",
       "projectName": "Service",
-      "projectPath": "D:\\TourManagement\\Service\\Service.csproj",
+      "projectPath": "d:\\TourManagement\\Service\\Service.csproj",
       "packagesPath": "C:\\Users\\laptop368\\.nuget\\packages\\",
-      "outputPath": "D:\\TourManagement\\Service\\obj\\",
+      "outputPath": "d:\\TourManagement\\Service\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\laptop368\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -4336,8 +4336,8 @@
           "framework": "net8.0",
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\TourManagement\\Repository\\Repository.csproj": {
-              "projectPath": "D:\\TourManagement\\Repository\\Repository.csproj"
+            "d:\\TourManagement\\Repository\\Repository.csproj": {
+              "projectPath": "d:\\TourManagement\\Repository\\Repository.csproj"
             }
           }
         }
@@ -4394,7 +4394,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.301/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.302/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

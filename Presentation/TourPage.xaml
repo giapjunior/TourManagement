@@ -1,4 +1,4 @@
-<Page x:Class="Presentation.TourPage"
+﻿<Page x:Class="Presentation.TourPage"
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       Title="Quản lý Tour" Background="#F8FAFC">
@@ -42,7 +42,7 @@
         </Grid>
 
         <!-- DataGrid -->
-        <DataGrid Grid.Row="2" x:Name="dgTour" AutoGenerateColumns="False"
+        <DataGrid CanUserReorderColumns="False" Grid.Row="2" x:Name="dgTour" AutoGenerateColumns="False"
                   IsReadOnly="True" SelectionMode="Single"
                   Background="White" BorderBrush="#E5E7EB" GridLinesVisibility="Horizontal"
                   AlternatingRowBackground="#F9FAFB" FontSize="13">

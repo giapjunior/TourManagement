@@ -1,4 +1,4 @@
-<Window x:Class="Presentation.CustomerDetailDialog"
+﻿<Window x:Class="Presentation.CustomerDetailDialog"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="Chi tiết Khách hàng" Height="520" Width="680"
@@ -40,7 +40,7 @@
                    Foreground="#1E3A5F" Margin="0,0,0,8"/>
 
         <!-- DataGrid lịch sử booking -->
-        <DataGrid Grid.Row="3" x:Name="dgBookings" AutoGenerateColumns="False"
+        <DataGrid CanUserReorderColumns="False" Grid.Row="3" x:Name="dgBookings" AutoGenerateColumns="False"
                   IsReadOnly="True" Background="White" BorderBrush="#E5E7EB"
                   GridLinesVisibility="Horizontal" AlternatingRowBackground="#F9FAFB" FontSize="12">
             <DataGrid.Columns>

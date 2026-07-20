@@ -68,9 +68,9 @@ namespace Presentation
         private void btnPay_Click(object sender, System.Windows.RoutedEventArgs e)
         {
             var booking = (DataAccess.DataAccess.Booking)((Button)sender).Tag;
-            if (booking.Status != "Pending")
+            if (booking.Status != "Confirmed")
             {
-                System.Windows.MessageBox.Show("Chỉ có thể thanh toán cho booking đang ở trạng thái Pending.", "Thông báo", System.Windows.MessageBoxButton.OK, System.Windows.MessageBoxImage.Information);
+                System.Windows.MessageBox.Show("Chỉ có thể thanh toán cho booking đã được Admin xác nhận (Confirmed).", "Thông báo", System.Windows.MessageBoxButton.OK, System.Windows.MessageBoxImage.Information);
                 return;
             }
 
@@ -90,6 +90,18 @@ namespace Presentation
                     System.Windows.MessageBox.Show(ex.Message, "Lỗi", System.Windows.MessageBoxButton.OK, System.Windows.MessageBoxImage.Error);
                 }
             }
+        }
+        private void btnReview_Click(object sender, System.Windows.RoutedEventArgs e)
+        {
+            var booking = (DataAccess.DataAccess.Booking)((Button)sender).Tag;
+            if (booking.Status != "Completed")
+            {
+                System.Windows.MessageBox.Show("Chỉ có thể đánh giá những chuyến đi đã hoàn thành (Completed).", "Thông báo", System.Windows.MessageBoxButton.OK, System.Windows.MessageBoxImage.Information);
+                return;
+            }
+
+            var dialog = new ReviewDialog(booking.Schedule.TourId);
+            dialog.ShowDialog();
         }
     }
 }

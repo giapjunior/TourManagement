@@ -19,12 +19,42 @@
                 <ColumnDefinition Width="150"/>
                 <ColumnDefinition Width="Auto"/>
             </Grid.ColumnDefinitions>
-            <TextBox x:Name="txtSearch" Grid.Column="0" Height="36" Padding="10,6"
-                     FontSize="13" BorderBrush="#D1D5DB" Margin="0,0,8,0" 
-                     ToolTip="Tên tour hoặc điểm đến (Enter để tìm)" KeyUp="txtSearch_KeyUp"/>
-            <TextBox x:Name="txtMaxPrice" Grid.Column="1" Height="36" Padding="10,6"
-                     FontSize="13" BorderBrush="#D1D5DB" Margin="0,0,8,0" 
-                     ToolTip="Mức giá tối đa" KeyUp="txtSearch_KeyUp"/>
+            <Grid Grid.Column="0" Margin="0,0,8,0">
+                <TextBox x:Name="txtSearch" Height="36" Padding="10,6"
+                         FontSize="13" BorderBrush="#D1D5DB" 
+                         ToolTip="Tên tour hoặc điểm đến (Enter để tìm)" KeyUp="txtSearch_KeyUp"/>
+                <TextBlock Text="Tên tour, điểm đến..." Foreground="#9CA3AF" 
+                           IsHitTestVisible="False" VerticalAlignment="Center" Margin="12,0,0,0" FontSize="13">
+                    <TextBlock.Style>
+                        <Style TargetType="TextBlock">
+                            <Setter Property="Visibility" Value="Collapsed"/>
+                            <Style.Triggers>
+                                <DataTrigger Binding="{Binding Text, ElementName=txtSearch}" Value="">
+                                    <Setter Property="Visibility" Value="Visible"/>
+                                </DataTrigger>
+                            </Style.Triggers>
+                        </Style>
+                    </TextBlock.Style>
+                </TextBlock>
+            </Grid>
+            <Grid Grid.Column="1" Margin="0,0,8,0">
+                <TextBox x:Name="txtMaxPrice" Height="36" Padding="10,6"
+                         FontSize="13" BorderBrush="#D1D5DB" 
+                         ToolTip="Mức giá tối đa" KeyUp="txtSearch_KeyUp"/>
+                <TextBlock Text="Mức giá tối đa..." Foreground="#9CA3AF" 
+                           IsHitTestVisible="False" VerticalAlignment="Center" Margin="12,0,0,0" FontSize="13">
+                    <TextBlock.Style>
+                        <Style TargetType="TextBlock">
+                            <Setter Property="Visibility" Value="Collapsed"/>
+                            <Style.Triggers>
+                                <DataTrigger Binding="{Binding Text, ElementName=txtMaxPrice}" Value="">
+                                    <Setter Property="Visibility" Value="Visible"/>
+                                </DataTrigger>
+                            </Style.Triggers>
+                        </Style>
+                    </TextBlock.Style>
+                </TextBlock>
+            </Grid>
             <DatePicker x:Name="dpDepartureDate" Grid.Column="2" Height="36" 
                      FontSize="13" BorderBrush="#D1D5DB" Margin="0,0,8,0" 
                      ToolTip="Ngày khởi hành từ"/>
@@ -33,7 +63,7 @@
                     FontSize="13" Cursor="Hand" Click="btnSearch_Click"/>
         </Grid>
 
-        <DataGrid Grid.Row="2" x:Name="dgTour" AutoGenerateColumns="False"
+        <DataGrid CanUserReorderColumns="False" Grid.Row="2" x:Name="dgTour" AutoGenerateColumns="False"
                   IsReadOnly="True" SelectionMode="Single" Background="White"
                   BorderBrush="#E5E7EB" GridLinesVisibility="Horizontal"
                   AlternatingRowBackground="#F9FAFB" FontSize="13">

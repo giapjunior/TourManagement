@@ -33,6 +33,29 @@ namespace Presentation
             }
         }
 
+        private void btnToggleEdit_Click(object sender, RoutedEventArgs e)
+        {
+            bool isEditing = !pnlForm.IsEnabled;
+            pnlForm.IsEnabled = isEditing;
+            
+            if (isEditing)
+            {
+                btnToggleEdit.Content = "❌ Hủy";
+                btnToggleEdit.Foreground = new System.Windows.Media.SolidColorBrush((System.Windows.Media.Color)System.Windows.Media.ColorConverter.ConvertFromString("#EF4444"));
+                btnSave.Visibility = Visibility.Visible;
+            }
+            else
+            {
+                btnToggleEdit.Content = "✏️ Sửa thông tin";
+                btnToggleEdit.Foreground = new System.Windows.Media.SolidColorBrush((System.Windows.Media.Color)System.Windows.Media.ColorConverter.ConvertFromString("#2563EB"));
+                btnSave.Visibility = Visibility.Collapsed;
+                // Reload original data to discard changes
+                LoadProfileData();
+                txtPassword.Password = "";
+                txtConfirmPassword.Password = "";
+            }
+        }
+
         private void btnSave_Click(object sender, RoutedEventArgs e)
         {
             try
@@ -88,6 +111,14 @@ namespace Presentation
                 }
 
                 MessageBox.Show("Cập nhật thông tin thành công!", "Thành công", MessageBoxButton.OK, MessageBoxImage.Information);
+                
+                // Exit edit mode after saving
+                pnlForm.IsEnabled = false;
+                btnToggleEdit.Content = "✏️ Sửa thông tin";
+                btnToggleEdit.Foreground = new System.Windows.Media.SolidColorBrush((System.Windows.Media.Color)System.Windows.Media.ColorConverter.ConvertFromString("#2563EB"));
+                btnSave.Visibility = Visibility.Collapsed;
+                txtPassword.Password = "";
+                txtConfirmPassword.Password = "";
             }
             catch (Exception ex)
             {

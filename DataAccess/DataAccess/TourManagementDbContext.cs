@@ -24,6 +24,8 @@ public partial class TourManagementDbContext : DbContext
 
     public virtual DbSet<Payment> Payments { get; set; }
 
+    public virtual DbSet<Review> Reviews { get; set; }
+
     public virtual DbSet<Schedule> Schedules { get; set; }
 
     public virtual DbSet<Tour> Tours { get; set; }

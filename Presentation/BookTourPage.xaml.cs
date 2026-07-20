@@ -22,7 +22,22 @@ namespace Presentation
             var schedules = _scheduleService.GetAvailable();
             if (preselectTourId.HasValue)
             {
+                var tour = new TourRepository(context).GetById(preselectTourId.Value);
+                if (tour != null)
+                {
+                    pnlTourInfo.Visibility = Visibility.Visible;
+                    txtTourName.Text = tour.TourName;
+                    txtTourDestination.Text = tour.Destination;
+                    txtTourPrice.Text = $"{tour.Price:N0} VNĐ";
+                    txtTourDescription.Text = tour.Description;
+                }
+                
                 schedules = schedules.Where(s => s.TourId == preselectTourId.Value).ToList();
+                
+                if (schedules.Count == 0)
+                {
+                    txtNoScheduleMsg.Visibility = Visibility.Visible;
+                }
             }
             dgSchedule.ItemsSource = schedules;
         }
