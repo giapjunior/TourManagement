@@ -44,8 +44,9 @@ namespace Service
             };
             _paymentRepo.Add(payment);
 
-            booking.Status = "Completed";
-            _bookingRepo.Update(booking);
+            // Không tự động đổi status sang Completed sau khi thanh toán nữa,
+            // chỉ giữ nguyên trạng thái (Confirmed) theo yêu cầu mới.
+            // Admin sẽ chịu trách nhiệm đổi trạng thái sang Completed.
         }
     }
 }

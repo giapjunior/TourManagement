@@ -26,4 +26,7 @@ public partial class Booking
     public virtual ICollection<Payment> Payments { get; set; } = new List<Payment>();
 
     public virtual Schedule Schedule { get; set; } = null!;
+
+    [System.ComponentModel.DataAnnotations.Schema.NotMapped]
+    public bool IsPaid => Payments != null && Payments.Count > 0;
 }

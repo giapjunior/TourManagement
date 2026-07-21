@@ -31,15 +31,55 @@
                                 <Button Content="Chi tiết" Height="26" Width="55" Margin="0,0,5,0"
                                         Background="#3B82F6" Foreground="White" BorderThickness="0"
                                         FontSize="11" Cursor="Hand" Click="btnDetail_Click" Tag="{Binding BookingId}"/>
+                                
                                 <Button Content="Thanh toán" Height="26" Width="70" Margin="0,0,5,0"
                                         Background="#10B981" Foreground="White" BorderThickness="0"
-                                        FontSize="11" Cursor="Hand" Click="btnPay_Click" Tag="{Binding}"/>
+                                        FontSize="11" Cursor="Hand" Click="btnPay_Click" Tag="{Binding}">
+                                    <Button.Style>
+                                        <Style TargetType="Button">
+                                            <Setter Property="Visibility" Value="Collapsed"/>
+                                            <Style.Triggers>
+                                                <MultiDataTrigger>
+                                                    <MultiDataTrigger.Conditions>
+                                                        <Condition Binding="{Binding Status}" Value="Confirmed" />
+                                                        <Condition Binding="{Binding IsPaid}" Value="False" />
+                                                    </MultiDataTrigger.Conditions>
+                                                    <Setter Property="Visibility" Value="Visible"/>
+                                                </MultiDataTrigger>
+                                            </Style.Triggers>
+                                        </Style>
+                                    </Button.Style>
+                                </Button>
+                                
                                 <Button Content="Đánh giá" Height="26" Width="60" Margin="0,0,5,0"
                                         Background="#F59E0B" Foreground="White" BorderThickness="0"
-                                        FontSize="11" Cursor="Hand" Click="btnReview_Click" Tag="{Binding}"/>
+                                        FontSize="11" Cursor="Hand" Click="btnReview_Click" Tag="{Binding}">
+                                    <Button.Style>
+                                        <Style TargetType="Button">
+                                            <Setter Property="Visibility" Value="Collapsed"/>
+                                            <Style.Triggers>
+                                                <DataTrigger Binding="{Binding Status}" Value="Completed">
+                                                    <Setter Property="Visibility" Value="Visible"/>
+                                                </DataTrigger>
+                                            </Style.Triggers>
+                                        </Style>
+                                    </Button.Style>
+                                </Button>
+                                
                                 <Button Content="Hủy" Height="26" Width="50"
                                         Background="#EF4444" Foreground="White" BorderThickness="0"
-                                        FontSize="11" Cursor="Hand" Click="btnCancel_Click" Tag="{Binding BookingId}"/>
+                                        FontSize="11" Cursor="Hand" Click="btnCancel_Click" Tag="{Binding BookingId}">
+                                    <Button.Style>
+                                        <Style TargetType="Button">
+                                            <Setter Property="Visibility" Value="Collapsed"/>
+                                            <Style.Triggers>
+                                                <DataTrigger Binding="{Binding Status}" Value="Pending">
+                                                    <Setter Property="Visibility" Value="Visible"/>
+                                                </DataTrigger>
+                                            </Style.Triggers>
+                                        </Style>
+                                    </Button.Style>
+                                </Button>
                             </StackPanel>
                         </DataTemplate>
                     </DataGridTemplateColumn.CellTemplate>
